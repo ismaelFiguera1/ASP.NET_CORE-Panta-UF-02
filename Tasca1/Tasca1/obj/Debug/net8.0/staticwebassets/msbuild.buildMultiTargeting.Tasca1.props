@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Tasca1.props" />
+</Project>
