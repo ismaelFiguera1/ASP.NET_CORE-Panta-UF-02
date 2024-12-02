@@ -1,4 +1,4 @@
-﻿using AspNetCore;
+﻿
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Encodings.Web;
 
@@ -24,6 +24,11 @@ public class HelloWorldController : Controller
     {
         ViewData["Message"] = "Hello " + name;
         ViewData["NumTimes"] = numTimes;
+        return View();
+    }
+
+    public IActionResult Vista()
+    {
         return View();
     }
 }
