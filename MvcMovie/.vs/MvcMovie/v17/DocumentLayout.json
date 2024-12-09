@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\usuari\\source\\repos\\MvcMovie\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EBDE3AFF-2723-49DD-86F5-4E422D02DF4F}|MvcMovie\\MvcMovie.csproj|c:\\users\\usuari\\source\\repos\\mvcmovie\\mvcmovie\\models\\usuari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBDE3AFF-2723-49DD-86F5-4E422D02DF4F}|MvcMovie\\MvcMovie.csproj|solutionrelative:mvcmovie\\models\\usuari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Usuari.cs",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\MvcMovie\\MvcMovie\\Models\\Usuari.cs",
+              "RelativeDocumentMoniker": "MvcMovie\\Models\\Usuari.cs",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\MvcMovie\\MvcMovie\\Models\\Usuari.cs",
+              "RelativeToolTip": "MvcMovie\\Models\\Usuari.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T15:08:48.313Z",
+              "EditorCaption": ""
             }
           ]
         }
