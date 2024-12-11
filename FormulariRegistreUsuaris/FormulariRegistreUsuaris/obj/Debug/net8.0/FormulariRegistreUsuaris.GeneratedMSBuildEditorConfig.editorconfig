@@ -18,8 +18,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\usuari\source\repos\FormulariRegistreUsuaris\FormulariRegistreUsuaris
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/usuari/source/repos/FormulariRegistreUsuaris/FormulariRegistreUsuaris/Views/Formulari/FormulariVista.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXVsYXJpXEZvcm11bGFyaVZpc3RhLmNzaHRtbA==
+[C:/Users/usuari/source/repos/FormulariRegistreUsuaris/FormulariRegistreUsuaris/Views/Formulari/Formulari.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXVsYXJpXEZvcm11bGFyaS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/usuari/source/repos/FormulariRegistreUsuaris/FormulariRegistreUsuaris/Views/Home/Index.cshtml]

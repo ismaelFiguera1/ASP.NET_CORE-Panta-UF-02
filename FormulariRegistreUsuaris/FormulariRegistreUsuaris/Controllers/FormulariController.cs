@@ -2,9 +2,9 @@
 
 namespace FormulariRegistreUsuaris.Controllers
 {
-    public class Formulari
+    public class FormulariController : Controller
     {
-        public IActionResult FormulariVista()
+        public IActionResult Formulari()
         {
             return View();
         }
