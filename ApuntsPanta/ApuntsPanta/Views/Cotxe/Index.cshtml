@@ -1,0 +1,34 @@
+﻿@model CotxeViewModel
+
+<form asp-controller="Cotxe" asp-action="Guardar" method="Post">
+
+    <label asp-for="ElCotxe.matricula">Matricula del cotxe</label>
+    <input asp-for="ElCotxe.matricula" /><br />
+
+
+    <label asp-for="ElCotxe.Tipus"></label>
+    <select asp-for="ElCotxe.Tipus" asp-items="Html.GetEnumSelectList<CotxeTipus>()">
+        <option>cap</option>
+        <option>altres</option>
+    </select><br />
+
+
+    <label asp-for="ElCotxe.dataMatriculacio"></label>
+    <input asp-for="ElCotxe.dataMatriculacio" /> <br /><br />
+
+
+    @{
+        foreach (string s in Model.Marques)
+        {
+            <input type="checkbox" name="marques" />@s <br />
+
+
+            
+        }
+    }
+
+
+    <button type="submit">Enviar</button>
+
+
+</form>
