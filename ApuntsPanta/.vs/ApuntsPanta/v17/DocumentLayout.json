@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{F649A788-144D-443B-8D80-D948672BDA50}|ApuntsPanta\\ApuntsPanta.csproj|solutionrelative:apuntspanta\\views\\cotxe\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F649A788-144D-443B-8D80-D948672BDA50}|ApuntsPanta\\ApuntsPanta.csproj|c:\\users\\usuari\\source\\repos\\apuntspanta\\apuntspanta\\viewmodels\\cotxeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F649A788-144D-443B-8D80-D948672BDA50}|ApuntsPanta\\ApuntsPanta.csproj|solutionrelative:apuntspanta\\viewmodels\\cotxeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F649A788-144D-443B-8D80-D948672BDA50}|ApuntsPanta\\ApuntsPanta.csproj|c:\\users\\usuari\\source\\repos\\apuntspanta\\apuntspanta\\controllers\\cotxecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F649A788-144D-443B-8D80-D948672BDA50}|ApuntsPanta\\ApuntsPanta.csproj|solutionrelative:apuntspanta\\controllers\\cotxecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F649A788-144D-443B-8D80-D948672BDA50}|ApuntsPanta\\ApuntsPanta.csproj|c:\\users\\usuari\\source\\repos\\apuntspanta\\apuntspanta\\models\\cotxes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F649A788-144D-443B-8D80-D948672BDA50}|ApuntsPanta\\ApuntsPanta.csproj|solutionrelative:apuntspanta\\models\\cotxes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F649A788-144D-443B-8D80-D948672BDA50}|ApuntsPanta\\ApuntsPanta.csproj|c:\\users\\usuari\\source\\repos\\apuntspanta\\apuntspanta\\models\\marques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F649A788-144D-443B-8D80-D948672BDA50}|ApuntsPanta\\ApuntsPanta.csproj|solutionrelative:apuntspanta\\models\\marques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F649A788-144D-443B-8D80-D948672BDA50}|ApuntsPanta\\ApuntsPanta.csproj|c:\\users\\usuari\\source\\repos\\apuntspanta\\apuntspanta\\viewmodels\\cotxeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F649A788-144D-443B-8D80-D948672BDA50}|ApuntsPanta\\ApuntsPanta.csproj|solutionrelative:apuntspanta\\viewmodels\\cotxeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,37 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CotxeViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\ApuntsPanta\\ApuntsPanta\\ViewModels\\CotxeViewModel.cs",
-              "RelativeDocumentMoniker": "ApuntsPanta\\ViewModels\\CotxeViewModel.cs",
-              "ToolTip": "C:\\Users\\usuari\\source\\repos\\ApuntsPanta\\ApuntsPanta\\ViewModels\\CotxeViewModel.cs",
-              "RelativeToolTip": "ApuntsPanta\\ViewModels\\CotxeViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T15:49:30.018Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Cotxes.cs",
-              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\ApuntsPanta\\ApuntsPanta\\Models\\Cotxes.cs",
-              "RelativeDocumentMoniker": "ApuntsPanta\\Models\\Cotxes.cs",
-              "ToolTip": "C:\\Users\\usuari\\source\\repos\\ApuntsPanta\\ApuntsPanta\\Models\\Cotxes.cs",
-              "RelativeToolTip": "ApuntsPanta\\Models\\Cotxes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T15:49:14.081Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -62,9 +40,48 @@
               "RelativeDocumentMoniker": "ApuntsPanta\\Views\\Cotxe\\Index.cshtml",
               "ToolTip": "C:\\Users\\usuari\\source\\repos\\ApuntsPanta\\ApuntsPanta\\Views\\Cotxe\\Index.cshtml",
               "RelativeToolTip": "ApuntsPanta\\Views\\Cotxe\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-13T15:29:04.727Z",
+              "WhenOpened": "2024-12-18T15:40:06.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CotxeController.cs",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\ApuntsPanta\\ApuntsPanta\\Controllers\\CotxeController.cs",
+              "RelativeDocumentMoniker": "ApuntsPanta\\Controllers\\CotxeController.cs",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\ApuntsPanta\\ApuntsPanta\\Controllers\\CotxeController.cs",
+              "RelativeToolTip": "ApuntsPanta\\Controllers\\CotxeController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T15:38:13.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CotxeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\ApuntsPanta\\ApuntsPanta\\ViewModels\\CotxeViewModel.cs",
+              "RelativeDocumentMoniker": "ApuntsPanta\\ViewModels\\CotxeViewModel.cs",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\ApuntsPanta\\ApuntsPanta\\ViewModels\\CotxeViewModel.cs",
+              "RelativeToolTip": "ApuntsPanta\\ViewModels\\CotxeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T15:36:48.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Marques.cs",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\ApuntsPanta\\ApuntsPanta\\Models\\Marques.cs",
+              "RelativeDocumentMoniker": "ApuntsPanta\\Models\\Marques.cs",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\ApuntsPanta\\ApuntsPanta\\Models\\Marques.cs",
+              "RelativeToolTip": "ApuntsPanta\\Models\\Marques.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T15:36:26.344Z",
               "EditorCaption": ""
             }
           ]
