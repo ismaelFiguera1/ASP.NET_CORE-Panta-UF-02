@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\usuari\\source\\repos\\Formulari-registre-persones\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C349ED29-18AF-4277-99F4-BD689C6C6EC8}|Formulari-registre-persones\\Formulari-registre-persones.csproj|c:\\users\\usuari\\source\\repos\\formulari-registre-persones\\formulari-registre-persones\\models\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C349ED29-18AF-4277-99F4-BD689C6C6EC8}|Formulari-registre-persones\\Formulari-registre-persones.csproj|solutionrelative:formulari-registre-persones\\models\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C349ED29-18AF-4277-99F4-BD689C6C6EC8}|Formulari-registre-persones\\Formulari-registre-persones.csproj|c:\\users\\usuari\\source\\repos\\formulari-registre-persones\\formulari-registre-persones\\views\\persona\\formulariregistre.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C349ED29-18AF-4277-99F4-BD689C6C6EC8}|Formulari-registre-persones\\Formulari-registre-persones.csproj|solutionrelative:formulari-registre-persones\\views\\persona\\formulariregistre.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C349ED29-18AF-4277-99F4-BD689C6C6EC8}|Formulari-registre-persones\\Formulari-registre-persones.csproj|c:\\users\\usuari\\source\\repos\\formulari-registre-persones\\formulari-registre-persones\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C349ED29-18AF-4277-99F4-BD689C6C6EC8}|Formulari-registre-persones\\Formulari-registre-persones.csproj|solutionrelative:formulari-registre-persones\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PersonaController.cs",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\Formulari-registre-persones\\Formulari-registre-persones\\Controllers\\PersonaController.cs",
+              "RelativeDocumentMoniker": "Formulari-registre-persones\\Controllers\\PersonaController.cs",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\Formulari-registre-persones\\Formulari-registre-persones\\Controllers\\PersonaController.cs",
+              "RelativeToolTip": "Formulari-registre-persones\\Controllers\\PersonaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T16:40:36.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormulariRegistre.cshtml",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\Formulari-registre-persones\\Formulari-registre-persones\\Views\\Persona\\FormulariRegistre.cshtml",
+              "RelativeDocumentMoniker": "Formulari-registre-persones\\Views\\Persona\\FormulariRegistre.cshtml",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\Formulari-registre-persones\\Formulari-registre-persones\\Views\\Persona\\FormulariRegistre.cshtml",
+              "RelativeToolTip": "Formulari-registre-persones\\Views\\Persona\\FormulariRegistre.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T16:05:03.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Persona.cs",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\Formulari-registre-persones\\Formulari-registre-persones\\Models\\Persona.cs",
+              "RelativeDocumentMoniker": "Formulari-registre-persones\\Models\\Persona.cs",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\Formulari-registre-persones\\Formulari-registre-persones\\Models\\Persona.cs",
+              "RelativeToolTip": "Formulari-registre-persones\\Models\\Persona.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T15:43:36.644Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

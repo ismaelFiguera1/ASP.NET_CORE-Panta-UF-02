@@ -1,0 +1,39 @@
+﻿@model RetornPersona
+
+<h1>Formulari de registre de persones</h1>
+<hr />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+<form asp-controller="Persona" asp-action="Guardar" method="Post">
+
+
+<label asp-for="LaPersona.Nom">Nom:</label>
+<input asp-for="LaPersona.Nom" />
+<br />
+
+
+<label asp-for="LaPersona.Cognoms">Cognoms:</label>
+<input asp-for="LaPersona.Cognoms" />
+<br />
+
+
+<label asp-for="LaPersona.DataNaixement">Data de naixement:</label>
+<input asp-for="LaPersona.DataNaixement" />
+<br />
+
+
+<label asp-for="LaPersona.Email">E-mail:</label>
+<input asp-for="LaPersona.Email" />
+<br />
+
+
+<button type="submit">Enviar Formulari</button>
+
+
+</form>
+
