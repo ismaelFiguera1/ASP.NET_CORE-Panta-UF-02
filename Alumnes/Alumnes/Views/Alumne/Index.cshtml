@@ -1,0 +1,36 @@
+﻿@model Alumne
+<h1>Formulari de alumnes</h1>
+
+<p>Aixo es un formulari on s'inserten dades i s'enmagatzemen</p>
+
+<br />
+<br />
+<br />
+
+<h3>Formulari</h3>
+
+<br />
+
+<form asp-controller="Alumne" asp-action="Index" method="post">
+	<div asp-validation-summary="All" class="text-danger"></div>
+	<label asp-for="Nom"></label>
+	<input asp-for="Nom" /><span asp-validation-for="Nom" class="text-danger"></span><br />
+
+	<label asp-for="Cognoms"></label>
+	<input asp-for="Cognoms" /><span asp-validation-for="Cognoms" class="text-danger"></span><br />
+
+	<label asp-for="Edat"></label>
+	<input asp-for="Edat" type="number"/><span asp-validation-for="Edat" class="text-danger"></span><br />
+
+	<label asp-for="Email"></label>
+	<input asp-for="Email" type="email" /><span asp-validation-for="Email" class="text-danger"></span><br />
+
+	<label asp-for="DataNaixement">Data de naixement</label>
+	<input asp-for="DataNaixement" /><span asp-validation-for="DataNaixement" class="text-danger"></span><br />
+
+	<button asp-controller="Alumne" asp-action="Index">Enviar</button>
+</form>
+
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+}
