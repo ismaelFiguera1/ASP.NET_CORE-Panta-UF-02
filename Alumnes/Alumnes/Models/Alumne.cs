@@ -1,7 +1,25 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace Alumnes.Models
 {
+    public enum Genere
+    {
+        Home,
+
+        Dona,
+
+        [Display(Name = "No declarat")]
+        NoDeclarat
+    }
+
+    public enum Tipus
+    {
+        Pelicules,
+
+        Series
+    }
+
     public class Alumne
     {
         [Required(ErrorMessage = "El nom no pot estar en blanc")]
@@ -23,5 +41,11 @@ namespace Alumnes.Models
         
         [DataType(DataType.Date)]
         public DateOnly DataNaixement { get; set; }
+
+        [Required(ErrorMessage = "El sexe no pot estar en blanc")]
+        public Genere Sexe { get; set; }
+
+        [Required(ErrorMessage = "El tipus no pot estar en blanc")]
+        public Tipus Tipus { get; set; }
     }
 }

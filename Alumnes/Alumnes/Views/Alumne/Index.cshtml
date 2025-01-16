@@ -26,7 +26,19 @@
 	<input asp-for="Email" type="email" /><span asp-validation-for="Email" class="text-danger"></span><br />
 
 	<label asp-for="DataNaixement">Data de naixement</label>
-	<input asp-for="DataNaixement" /><span asp-validation-for="DataNaixement" class="text-danger"></span><br />
+	<input asp-for="DataNaixement" max="@ViewBag.FechaMaxima"  /><span asp-validation-for="DataNaixement" class="text-danger"></span><br />
+
+	<label asp-for="Sexe"></label>
+	<select asp-for="Sexe" asp-items="Html.GetEnumSelectList<Genere>()"> <br />
+		<option>cap</option>
+	</select> <span asp-validation-for="Sexe" class="text-danger"></span><br />
+
+	<label asp-for="Tipus"></label>
+	<input asp-for="Tipus" type="radio" checked value="Pelicules">
+	<label>Pelicules</label><br />
+	<input asp-for="Tipus" type="radio" value="Series">
+	<label>Series</label>
+	<span asp-validation-for="Tipus" class="text-danger"></span><br />
 
 	<button asp-controller="Alumne" asp-action="Index">Enviar</button>
 </form>

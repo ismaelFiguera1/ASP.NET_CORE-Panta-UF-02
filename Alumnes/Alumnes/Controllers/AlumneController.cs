@@ -8,6 +8,9 @@ namespace Alumnes.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            // Aqui li passo la data maxima
+            var fechaMaxima = DateTime.Now.AddYears(-5).ToString("yyyy-MM-dd");
+            ViewBag.FechaMaxima = fechaMaxima;
             return View();
         }
 
