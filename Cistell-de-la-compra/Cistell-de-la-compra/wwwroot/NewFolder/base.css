@@ -1,0 +1,39 @@
+﻿*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    flex-direction: column;
+}
+
+header {
+    height: 12%;
+    padding-top: 4%;
+}
+
+main {
+    height: 78%;
+}
+
+footer {
+    height: 10%;
+}
+
+nav {
+    display: flex;
+}
+
+    nav > * {
+        flex: 1;
+        text-align: center;
+    }

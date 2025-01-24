@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Cistell-de-la-compra.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\wwwroot\\NewFolder\\base.css",
+      "PackagePath": "staticwebassets\\NewFolder\\base.css"
+    },
+    {
       "Id": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

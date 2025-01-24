@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jKkH7V9erAE6rJ297b6rmyADd4l1aNXkDVpwX81czt4=",
+  "Hash": "foJxgswGYo58azoQaUk11tf7jH0KAdD3L2gOmYoQL8c=",
   "Source": "Cistell-de-la-compra",
   "BasePath": "_content/Cistell-de-la-compra",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\wwwroot\\NewFolder\\base.css",
+      "SourceId": "Cistell-de-la-compra",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\wwwroot\\",
+      "BasePath": "_content/Cistell-de-la-compra",
+      "RelativePath": "NewFolder/base.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\NewFolder\\base.css"
     }
   ]
 }
