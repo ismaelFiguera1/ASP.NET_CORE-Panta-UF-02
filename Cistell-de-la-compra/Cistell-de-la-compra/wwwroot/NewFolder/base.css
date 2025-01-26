@@ -37,3 +37,16 @@ nav {
         flex: 1;
         text-align: center;
     }
+
+.footer {
+    width: 100%;
+}
+
+    .footer td {
+        width: 30.33%;
+        text-align: center;
+    }
+
+.footer {
+    border-spacing: 6px;
+}
