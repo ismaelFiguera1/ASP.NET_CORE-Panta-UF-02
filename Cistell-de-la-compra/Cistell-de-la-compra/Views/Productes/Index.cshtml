@@ -1,36 +1,13 @@
-﻿@model IEnumerable<Cistell_de_la_compra.Models.Producte>        
+﻿<section class="p-section">
+    <section>
+        <div class="p-titol">
+            <h1>Productes del Mercadona</h1>
+        </div>
+        
+        <div>
+            <div class="p-tenda">a</div>
 
-<!-- Aqui li diem que la vista reb una llista del model Producte -->
-
-<h1>Llistat del productes</h1>  
-
-<p>Aixo es un <b>llista de productes</b> de la nostra tenda</p>
-
-
-<br />
-<br />
-<br />
-
-<table style="border:medium solid black">
-    <tr><td style="text-align: center" colspan="3"><b><i>Productes</i></b></td></tr>
-    <tr>
-        <td>Codi</td>
-        <td>Nom</td>
-        <td>Preu</td>
-    </tr>
-
-    <!-- La llista es ficara a Model. Model ve per defecte amb el controlador -->
-
-   @foreach (var producte in Model)
-   {
-       <tr>
-           <td>@producte.CodiProducte</td>
-            <td>@producte.Nom</td>
-            <td>@producte.Preu</td>
-       </tr>
-   }
-
-   <!-- Recorro el "Model" que es lo que ha arribat del controlador, ho fico a la variable producte i per cada un creo una fila amb les seves celes -->
-
-</table>
-
+        </div>
+    </section>
+    <div>b</div>
+</section>

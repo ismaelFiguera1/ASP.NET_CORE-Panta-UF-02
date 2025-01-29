@@ -7,4 +7,8 @@
     <RootNamespace>Cistell_de_la_compra</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\imatges\" />
+  </ItemGroup>
+
 </Project>

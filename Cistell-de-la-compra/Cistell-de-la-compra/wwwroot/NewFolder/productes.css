@@ -1,0 +1,36 @@
+﻿.p-section{
+    display: flex;
+    height: 100%;
+}
+
+    .p-section > section {
+        width: 85%;
+    }
+
+.p-section > div {
+    width:15%;
+    border: 1px solid black;
+    background-color: yellow;
+}
+
+    .p-section section > div {
+        height: 85%;
+    }
+
+    .p-section section .p-titol {
+        height: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: red;
+    }
+
+.p-titol h1 {
+    height:25%;
+}
+
+.p-tenda{
+    height: 60%;
+    width:90%;
+    background-color: white;
+}
