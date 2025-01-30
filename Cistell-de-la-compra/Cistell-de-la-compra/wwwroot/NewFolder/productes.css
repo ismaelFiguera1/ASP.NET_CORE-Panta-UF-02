@@ -33,4 +33,7 @@
     height: 60%;
     width:90%;
     background-color: white;
+    margin-left:5%;
+    margin-top:8%;
+    /*Per calcular el margin top es el (85%-60%)/2*/
 }

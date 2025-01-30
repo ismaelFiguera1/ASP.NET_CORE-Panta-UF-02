@@ -5,7 +5,22 @@
         </div>
         
         <div>
-            <div class="p-tenda">a</div>
+            <div class="p-tenda">
+                <table>
+
+                    <!-- "Model" es converteix autamaticament en el model 
+                    que li hem passat al controlador -->
+
+                    @foreach (var producte in Model)
+                    {
+                        <tr>
+                            <td>@producte.CodiProducte</td>
+                            <td>@producte.Nom</td>
+                            <td>@producte.Preu</td>
+                        </tr>
+                    }
+                </table>
+            </div>
 
         </div>
     </section>

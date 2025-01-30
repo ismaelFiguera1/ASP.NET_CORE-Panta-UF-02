@@ -7,10 +7,11 @@ namespace Cistell_de_la_compra.Controllers
     {
         public IActionResult Index()
         {
-            var productes = new Productes();    /* Aqui fem una instancia del model per recuperar el llistat i ho passarem a la llista */
+            var productes = Productes.ObtenirProductes();    /* Aqui fem una instancia del model per recuperar el llistat i ho passarem a la llista */
 
 
-            return View(productes.llistaProductes);
+
+            return View(productes);
         }
     }
 }
