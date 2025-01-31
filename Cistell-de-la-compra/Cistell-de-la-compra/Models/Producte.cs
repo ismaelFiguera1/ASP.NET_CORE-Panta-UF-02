@@ -15,6 +15,9 @@ namespace Cistell_de_la_compra.Models
         [Required(ErrorMessage = "El preu del producte no pot estar en blanc")]
         public double Preu {  get; set; }
 
+        [Required(ErrorMessage = "La imatge del producte no pot estar en blanc")]
+        public string Imatge { get; set; }
+
 
     }
 }

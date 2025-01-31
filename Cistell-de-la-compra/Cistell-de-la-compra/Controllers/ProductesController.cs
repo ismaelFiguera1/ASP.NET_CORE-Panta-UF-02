@@ -1,4 +1,4 @@
-﻿using Cistell_de_la_compra.Models;
+﻿using Cistell_de_la_compra.Data;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Cistell_de_la_compra.Controllers
@@ -11,7 +11,7 @@ namespace Cistell_de_la_compra.Controllers
 
 
 
-            return View(productes);
+            return View(productes);    /* A la vista li passem un model */
         }
     }
 }

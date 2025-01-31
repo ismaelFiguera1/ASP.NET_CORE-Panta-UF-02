@@ -29,11 +29,22 @@
     height:25%;
 }
 
-.p-tenda{
-    height: 60%;
-    width:90%;
+.p-tenda {
+    width: 90%;
     background-color: white;
-    margin-left:5%;
-    margin-top:8%;
-    /*Per calcular el margin top es el (85%-60%)/2*/
+    margin-left: 5%;
+    margin-top: 4%;
+    height: 75%;
+    display: flex;
+    padding: 2%;
+}
+
+.p-tenda > *{
+    width: 32%;
+}
+
+.p-tenda img{
+    width: 100%;
+    max-height:72%;
+    height:72%;
 }

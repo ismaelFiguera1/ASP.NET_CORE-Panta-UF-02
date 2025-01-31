@@ -6,20 +6,21 @@
         
         <div>
             <div class="p-tenda">
-                <table>
 
                     <!-- "Model" es converteix autamaticament en el model 
                     que li hem passat al controlador -->
 
                     @foreach (var producte in Model)
                     {
-                        <tr>
-                            <td>@producte.CodiProducte</td>
-                            <td>@producte.Nom</td>
-                            <td>@producte.Preu</td>
-                        </tr>
+                        <figure>
+                            <img src="@producte.Imatge" alt="Alternate Text" />
+                        <figcaption>@producte.Nom</figcaption>
+                        </figure>
                     }
-                </table>
+
+
+
+
             </div>
 
         </div>
