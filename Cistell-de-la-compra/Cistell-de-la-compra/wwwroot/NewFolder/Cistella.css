@@ -1,0 +1,24 @@
+﻿.cistella {
+    height:100%;
+}
+
+
+
+.cistella > div{
+    height:90%;
+}
+
+    .cistella .titol {
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cistella .titol h1 {
+        height: 50%;
+    }
+
+    .content{
+        background-color: whitesmoke;
+    }
