@@ -9,7 +9,7 @@ namespace Cistell_de_la_compra.Data
         public static List<Producte> LlistaProductes { get; } = new List<Producte>
         {
             new Producte { CodiProducte = "001", Nom = "Patata", Preu = 0.23, Imatge="/imatges/patata.jpg" },
-            new Producte { CodiProducte = "002", Nom = "Coca-cola", Preu = 1.20, Imatge="/imatges/Cocacola.png" },
+            new Producte { CodiProducte = "002", Nom = "Coca-cola", Preu = 1.20, Imatge="/imatges/cocacola.webp" },
             new Producte { CodiProducte = "003", Nom = "Lejia", Preu = 2.67, Imatge = "/imatges/Lejia.jpg" }
         };
 

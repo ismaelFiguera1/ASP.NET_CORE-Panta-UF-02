@@ -9,6 +9,15 @@ namespace Cistell_de_la_compra
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            // Configuración para habilitar sesiones
+            builder.Services.AddDistributedMemoryCache(); // Cache per la sessio
+            builder.Services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(30); // la sessio dura 30min
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -19,6 +28,9 @@ namespace Cistell_de_la_compra
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            // Habilitar el middleware de sesión
+            app.UseSession();
 
             app.UseAuthorization();
 

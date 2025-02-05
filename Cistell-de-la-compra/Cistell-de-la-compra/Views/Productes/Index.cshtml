@@ -12,10 +12,19 @@
 
                     @foreach (var producte in Model)
                     {
+
+
+                    if (producte.Imatge == "/imatges/cocacola.webp"){
                         <figure>
-                            <img src="@producte.Imatge" alt="Alternate Text" />
-                        <figcaption>@producte.Nom</figcaption>
+                            <img src="@producte.Imatge" class="cocacola"/>
+                            <figcaption>@producte.Nom</figcaption>
                         </figure>
+                    } else {
+                        <figure>
+                            <img src="@producte.Imatge" />
+                            <figcaption>@producte.Nom</figcaption>
+                        </figure>
+                    }
                     }
 
 
@@ -25,5 +34,31 @@
 
         </div>
     </section>
-    <div>b</div>
+    <div>
+
+        <!-- Aqui hi haura el formulari -->
+
+        <form asp-action="ActualitzarCistell" asp-controller="Cistell" method="post">
+            <h2>Afegir productes a la cesta</h2>
+
+        <!-- Cocacola -->
+        <div>
+                <label for="Cocacola"></label> <br />
+                <input type="number" name="Cocacola" id="Cocacola" value="0" min="0"/>
+            </div>
+            <!-- Patata -->
+            <div>
+                <label for="Patata"></label> <br />
+                <input type="number" name="Patata" id="Patata" value="0" min="0" />
+            </div>
+            <!-- Cocacola -->
+            <div>
+                <label for="Lejia"></label> <br />
+                <input type="number" name="Lejia" id="Lejia" value="0" min="0" />
+            </div>
+        
+            <button type="submit">Afegir a la cesta</button>
+        </form>
+
+    </div>
 </section>

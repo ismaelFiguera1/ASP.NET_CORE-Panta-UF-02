@@ -1,6 +1,10 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\imatges\Cocacola.png
+wwwroot\imatges\cocacola.webp
+wwwroot\imatges\Lejia.jpg
 wwwroot\imatges\mercadona.png
+wwwroot\imatges\patata.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

@@ -9,7 +9,9 @@
         a : 2
          */
 
-
+        public int Cocacola { get; set; }
+        public int Patata { get; set; }
+        public int Lejia { get; set; }
 
     }
 }
