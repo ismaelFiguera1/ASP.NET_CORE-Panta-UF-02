@@ -8,6 +8,7 @@
     </div>
 
     <div class="content">
+        <form asp-action="ActualitzarCistell" asp-controller="Cistell" method="post">
         <table>
             <tr>
                 <th>Id</th>
@@ -22,23 +23,30 @@
                     <td>
                         @{
                             int quantitat=0;
+                            string nom = "";
                             if(@producte.CodiProducte == "001"){
                                 quantitat = cistell.Patata;
+                                nom = "Patata";
                             }
                             if (@producte.CodiProducte == "002")
                             {
                                 quantitat = cistell.Cocacola;
+                                nom = "Cocacola";
                             }
                             if (@producte.CodiProducte == "003")
                             {
                                 quantitat = cistell.Lejia;
+                                nom = "Lejia";
                             }
                         }
-                        @quantitat
+                        <input type="number" name="@nom" value="@quantitat" min="0" />
+                        
                     </td>
                 </tr>
             }
-        </table>
+            </table>
+            <button type="submit">Comprar</button>
+        </form>
     </div>
 </section>
 
