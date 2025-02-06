@@ -8,7 +8,7 @@
     </div>
 
     <div class="content">
-        <form asp-action="ActualitzarCistell" asp-controller="Cistell" method="post">
+        <form asp-action="ActualitzarCistell2" asp-controller="Cistell" method="post">
         <table>
             <tr>
                 <th>Id</th>
@@ -17,11 +17,8 @@
             </tr>
             @foreach (var producte in Model)
             {
-                <tr>
-                    <td>@producte.CodiProducte</td>
-                    <td>@producte.Nom</td>
-                    <td>
-                        @{
+         
+                        {
                             int quantitat=0;
                             string nom = "";
                             if(@producte.CodiProducte == "001"){
@@ -38,13 +35,39 @@
                                 quantitat = cistell.Lejia;
                                 nom = "Lejia";
                             }
-                        }
-                        <input type="number" name="@nom" value="@quantitat" min="0" />
                         
-                    </td>
-                </tr>
+
+                            @if(quantitat > 0){
+                                <tr>
+                                <td>@producte.CodiProducte</td>
+                                <td>@producte.Nom</td>
+                                    <td>
+                                        <input type="number" name="@nom" value="@quantitat" min="0" />
+                                    </td>
+                                </tr>
+
+
+
+
+                            
+                            }else{
+                                <tr class="hidden">
+                                    <td>@producte.CodiProducte</td>
+                                    <td>@producte.Nom</td>
+                                    <td>
+                                        <input type="number" name="@nom" value="@quantitat" min="0" />
+                                    </td>
+                                </tr>
+                            }
+
+
+                  
+                        }
+                
             }
             </table>
+
+
             <button type="submit">Comprar</button>
         </form>
     </div>

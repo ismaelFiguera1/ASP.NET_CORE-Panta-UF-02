@@ -22,3 +22,9 @@
     .content{
         background-color: whitesmoke;
     }
+
+
+
+    .cistella .hidden, .factura .hidden{
+        display: none;
+    }

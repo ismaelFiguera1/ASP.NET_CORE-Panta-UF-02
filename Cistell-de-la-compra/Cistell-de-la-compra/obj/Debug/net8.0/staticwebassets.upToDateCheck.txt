@@ -65,5 +65,6 @@ wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
 wwwroot\NewFolder\base.css
 wwwroot\NewFolder\Cistella.css
+wwwroot\NewFolder\Factura.css
 wwwroot\NewFolder\Home.css
 wwwroot\NewFolder\productes.css

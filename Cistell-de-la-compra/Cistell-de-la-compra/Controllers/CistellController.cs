@@ -40,6 +40,36 @@ namespace Cistell_de_la_compra.Controllers
 
 
 
+        [HttpPost]
+        public IActionResult ActualitzarCistell2(Cistell cistell)
+        {
+            // Aqui serialitzo la cesta a JSON i ho guardo en la sessio
+            HttpContext.Session.SetString("Cistell", JsonSerializer.Serialize(cistell));
+
+            var productes = Productes.ObtenirProductes();
+            var cistellJson = HttpContext.Session.GetString("Cistell");
+
+            Cistell cistell1;
+
+            if (!string.IsNullOrEmpty(cistellJson))
+            {
+                cistell1 = JsonSerializer.Deserialize<Cistell>(cistellJson);
+            }
+            else
+            {
+                cistell1 = new Cistell();
+            }
+
+            ViewData["Cistell"] = cistell1;
+
+
+            return View("Factura", productes);
+        }
+
+
+
+
+
         public IActionResult LeerCistell()
         {
             // Obtener el JSON guardado en la sesión
