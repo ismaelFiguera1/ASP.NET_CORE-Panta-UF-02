@@ -1,9 +1,45 @@
-﻿<section class="cistella">
+﻿@{
+    var cistell = ViewData["Cistell"] as Cistell_de_la_compra.Models.Cistell;
+}
+
+<section class="cistella">
     <div class="titol">
-            <h1>Cistell de la compra</h1>
+        <h1>Cistell de la compra</h1>
     </div>
 
-    <div class="content">a</div>
+    <div class="content">
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Nom producte</th>
+                <th>Quantitat</th>
+            </tr>
+            @foreach (var producte in Model)
+            {
+                <tr>
+                    <td>@producte.CodiProducte</td>
+                    <td>@producte.Nom</td>
+                    <td>
+                        @{
+                            int quantitat=0;
+                            if(@producte.CodiProducte == "001"){
+                                quantitat = cistell.Patata;
+                            }
+                            if (@producte.CodiProducte == "002")
+                            {
+                                quantitat = cistell.Cocacola;
+                            }
+                            if (@producte.CodiProducte == "003")
+                            {
+                                quantitat = cistell.Lejia;
+                            }
+                        }
+                        @quantitat
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
 </section>
 
 

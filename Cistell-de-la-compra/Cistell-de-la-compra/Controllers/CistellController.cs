@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using Cistell_de_la_compra.Data;
 using Cistell_de_la_compra.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,7 +9,23 @@ namespace Cistell_de_la_compra.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var productes = Productes.ObtenirProductes();
+            var cistellJson = HttpContext.Session.GetString("Cistell");
+
+            Cistell cistell;
+
+            if(!string.IsNullOrEmpty(cistellJson))
+            {
+                cistell = JsonSerializer.Deserialize<Cistell>(cistellJson);
+            }
+            else
+            {
+                cistell = new Cistell();
+            }
+
+            ViewData["Cistell"] = cistell;
+
+            return View(productes);
         }
 
         [HttpPost]
@@ -34,9 +51,9 @@ namespace Cistell_de_la_compra.Controllers
                 var cistell = JsonSerializer.Deserialize<Cistell>(cistellJson);
 
                 // Mostrar valores (para probar)
-                Console.WriteLine($"Cocacola: {cistell.Cocacola}");
-                Console.WriteLine($"Patata: {cistell.Patata}");
-                Console.WriteLine($"Lejia: {cistell.Lejia}");
+                Console.WriteLine($"Cocacola: {cistell.Cocacola} -> {cistell.IdCocacola}");
+                Console.WriteLine($"Patata: {cistell.Patata} -> {cistell.IdPatata}");
+                Console.WriteLine($"Lejia: {cistell.Lejia} -> {cistell.IdLejia}");
             }
             else
             {

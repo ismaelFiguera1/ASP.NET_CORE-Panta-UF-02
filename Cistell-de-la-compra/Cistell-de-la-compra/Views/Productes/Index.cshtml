@@ -1,17 +1,19 @@
-﻿<section class="p-section">
+﻿
+
+<section class="p-section">
     <section>
         <div class="p-titol">
             <h1>Productes del Mercadona</h1>
         </div>
-        
+
         <div>
             <div class="p-tenda">
 
-                    <!-- "Model" es converteix autamaticament en el model 
-                    que li hem passat al controlador -->
+                <!-- "Model" es converteix autamaticament en el model 
+                que li hem passat al controlador -->
 
-                    @foreach (var producte in Model)
-                    {
+                @foreach (var producte in Model)
+                {
 
 
                     if (producte.Imatge == "/imatges/cocacola.webp"){
@@ -25,7 +27,7 @@
                             <figcaption>@producte.Nom</figcaption>
                         </figure>
                     }
-                    }
+                }
 
 
 
@@ -41,20 +43,22 @@
         <form asp-action="ActualitzarCistell" asp-controller="Cistell" method="post">
             <h2>Afegir productes a la cesta</h2>
 
-        <!-- Cocacola -->
-        <div>
-                <label asp-for="Cocacola"></label> <br />
-                <input type="number" name="Cocacola" id="Cocacola" value="0" min="0"/>
-            </div>
-            <!-- Patata -->
             <div>
-                <label for="Patata"></label> <br />
-                <input type="number" name="Patata" id="Patata" value="0" min="0" />
+                <label>Cocacola:</label> <br />
+                <input type="hidden" name="IdCocacola" value="002" />
+                <input type="number" name="Cocacola" value="0" min="0" />
             </div>
-            <!-- Cocacola -->
+
             <div>
-                <label for="Lejia"></label> <br />
-                <input type="number" name="Lejia" id="Lejia" value="0" min="0" />
+                <label>Patata:</label> <br />
+                <input type="hidden" name="IdPatata" value="001" />
+                <input type="number" name="Patata" value="0" min="0" />
+            </div>
+
+            <div>
+                <label>Lejia:</label> <br />
+                <input type="hidden" name="IdLejia" value="003" />
+                <input type="number" name="Lejia" value="0" min="0" />
             </div>
         
             <button type="submit">Afegir a la cesta</button>
