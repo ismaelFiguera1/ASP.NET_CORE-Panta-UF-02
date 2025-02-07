@@ -58,15 +58,15 @@
                                     }
                                     total += preu;
                                 }
-                            @preu
-                            
-                                
-                        </td>
-                    </tr>
+                                @preu
+
+
+                            </td>
+                        </tr>
 
 
 
-                    
+
                     }else
                     {
                         <tr class="hidden">
@@ -98,10 +98,10 @@
                         </tr>
                     }
                 }
-                        
+
 
             }
-            </table>
+        </table>
         <br />
         <br />
         <br />
@@ -110,6 +110,10 @@
         <p>
             Total: <b>@total $</b>
         </p>
-        </div>
-    </section>
+    </div>
+</section>
+
+@{
+    Context.Session.Remove("Cistell");
+}
 

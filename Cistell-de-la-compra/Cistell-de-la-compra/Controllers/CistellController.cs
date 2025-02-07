@@ -20,12 +20,12 @@ namespace Cistell_de_la_compra.Controllers
             }
             else
             {
-                cistell = new Cistell();
+                cistell = new Cistell(); // tan si com no, necessito retornar algo
             }
 
-            ViewData["Cistell"] = cistell;
+            ViewData["Cistell"] = cistell; // Aqui envio a la view el model cistell
 
-            return View(productes);
+            return View(productes); // i aqui la llista de productes
         }
 
         [HttpPost]
@@ -66,32 +66,6 @@ namespace Cistell_de_la_compra.Controllers
             return View("Factura", productes);
         }
 
-
-
-
-
-        public IActionResult LeerCistell()
-        {
-            // Obtener el JSON guardado en la sesión
-            var cistellJson = HttpContext.Session.GetString("Cistell");
-
-            if (!string.IsNullOrEmpty(cistellJson))
-            {
-                // Deserializar el JSON a un objeto Cistell
-                var cistell = JsonSerializer.Deserialize<Cistell>(cistellJson);
-
-                // Mostrar valores (para probar)
-                Console.WriteLine($"Cocacola: {cistell.Cocacola} -> {cistell.IdCocacola}");
-                Console.WriteLine($"Patata: {cistell.Patata} -> {cistell.IdPatata}");
-                Console.WriteLine($"Lejia: {cistell.Lejia} -> {cistell.IdLejia}");
-            }
-            else
-            {
-                Console.WriteLine("El cesto está vacío o no existe en la sesión.");
-            }
-
-            return RedirectToAction("Index", "Productes");
-        }
 
 
     }
