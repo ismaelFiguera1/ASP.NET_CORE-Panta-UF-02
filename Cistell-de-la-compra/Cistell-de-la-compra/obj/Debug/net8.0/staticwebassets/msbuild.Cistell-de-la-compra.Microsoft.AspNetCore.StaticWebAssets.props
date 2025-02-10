@@ -1218,8 +1218,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>vpogcyaar6</Fingerprint>
-      <Integrity>3aru3ONdwujT63Yoen7NU7QAP34nfT7fNwFXwZfpSw0=</Integrity>
+      <Fingerprint>c72my5e9f4</Fingerprint>
+      <Integrity>WJXBelD0QPW+8fxZVP91nf8vVcKDpho13QNi8cSmbT4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NewFolder\Cistella.css'))</OriginalItemSpec>

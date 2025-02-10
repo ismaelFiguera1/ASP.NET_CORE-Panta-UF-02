@@ -1,4 +1,4 @@
-﻿
+﻿@model List<Producte>
 
 <section class="p-section">
     <section>
@@ -40,29 +40,22 @@
 
         <!-- Aqui hi haura el formulari -->
 
-        <form asp-action="ActualitzarCistell" asp-controller="Cistell" method="post">
+        
             <h2>Afegir productes a la cesta</h2>
 
-            <div>
-                <label>Cocacola:</label> <br />
-                <input type="hidden" name="IdCocacola" value="002" />
-                <input type="number" name="Cocacola" value="0" min="0" />
-            </div>
+            @foreach (var producte in Model)
+            {
+            <form asp-action="ActualitzarCistell" asp-controller="Cistell" method="post">
+                <!-- Enviem sol 1 cuantitat dels productes seleccionats, a la vista cistell ja modificarem la cuantitat -->
+                <input type="hidden" name="CodiProducteFormulari" value="@producte.CodiProducte" />
+                <input type="hidden" name="QuantitatFormulari" value="1" />
+                <button type="submit">@producte.Nom</button>
+            </form>
 
-            <div>
-                <label>Patata:</label> <br />
-                <input type="hidden" name="IdPatata" value="001" />
-                <input type="number" name="Patata" value="0" min="0" />
-            </div>
-
-            <div>
-                <label>Lejia:</label> <br />
-                <input type="hidden" name="IdLejia" value="003" />
-                <input type="number" name="Lejia" value="0" min="0" />
-            </div>
+            }
         
-            <button type="submit">Afegir a la cesta</button>
-        </form>
+            
+        
 
     </div>
 </section>

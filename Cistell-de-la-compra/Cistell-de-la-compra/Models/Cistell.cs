@@ -2,22 +2,9 @@
 {
     public class Cistell
     {
-        /* El cistell tambe sera un llistat de "Producte" pero ho haurem de fer dinamicament en una vista apart ,
-            pero tambe es te que enmagatzemar les vegades que es vol aquell producte ex:  
-        patata : 6
-        x : 0
-        a : 2
-         */
 
-        public int IdCocacola { get; set; }
+        public List<ElementCistell> Elements { get; set; } = new List<ElementCistell>();
 
-        public int IdPatata { get; set; }
-
-        public int IdLejia { get; set; }
-
-        public int Cocacola { get; set; }
-        public int Patata { get; set; }
-        public int Lejia { get; set; }
-
+        // No ho faig estatic perqu cada usuari te que tindrer la seva cesta, si ho faig tots els usuaris farien servir la mateixa cesta i hi haria error de logica
     }
 }
