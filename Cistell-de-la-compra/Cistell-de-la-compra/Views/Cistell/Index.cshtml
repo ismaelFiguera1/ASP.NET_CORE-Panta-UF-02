@@ -11,15 +11,31 @@
 		
 		@foreach (var element in Model.Elements)
 		{
-			<tr>
-				<td>
-					@element.CodiProducte
-						<input type="hidden" name="CodiFormulari" value="@element.CodiProducte" />
-				</td>
-				<td>
-						<input type="number" name="QuantitatFormulari" min="0" value="@element.Quantitat" />
-				</td>
-			</tr>
+				if(element.Quantitat>0)
+				{
+					<tr>
+						<td>
+							@element.CodiProducte
+								<input type="hidden" name="CodiFormulari" value="@element.CodiProducte" />
+						</td>
+						<td>
+								<input type="number" name="QuantitatFormulari" min="0" value="@element.Quantitat" />
+						</td>
+					</tr>
+				}
+				else
+				{
+					<tr class="hidden">
+						<td>
+							@element.CodiProducte
+								<input type="hidden" name="CodiFormulari" value="@element.CodiProducte" />
+						</td>
+						<td>
+								<input type="number" name="QuantitatFormulari" min="0" value="@element.Quantitat" />
+						</td>
+					</tr>
+				}
+
 		}
 		
 	</table>

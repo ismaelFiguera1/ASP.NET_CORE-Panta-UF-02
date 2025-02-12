@@ -9,3 +9,7 @@
     width: 35%;
     background-color: white;
 }
+
+.hidden {
+    display: none;
+}

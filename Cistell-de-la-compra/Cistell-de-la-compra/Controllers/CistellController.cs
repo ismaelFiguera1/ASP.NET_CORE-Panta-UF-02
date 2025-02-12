@@ -1,6 +1,7 @@
 ﻿using System.Text.Json;
 using Cistell_de_la_compra.Data;
 using Cistell_de_la_compra.Models;
+using Cistell_de_la_compra.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Cistell_de_la_compra.Controllers
@@ -88,11 +89,14 @@ namespace Cistell_de_la_compra.Controllers
         {
             // es fica com array perque al form els inputs tenen el mateix name
 
-            
 
-            Cistell cistell;
 
-            cistell = new Cistell();
+            CistellProductesViewModel cistellProductes = new CistellProductesViewModel();
+
+            var productes = cistellProductes.ObtenirProductes();
+            var cistell = cistellProductes.ObtenirCistell();
+
+
 
             for (int i = 0; i < CodiFormulari.Length; i++)
             {
@@ -104,9 +108,11 @@ namespace Cistell_de_la_compra.Controllers
 
             HttpContext.Session.SetString("Cistell", JsonSerializer.Serialize(cistell));
 
+			
 
+			
 
-            return RedirectToAction("Index", "Cistell");
+			return View("Factura", cistellProductes);
 
 
         }
@@ -115,32 +121,7 @@ namespace Cistell_de_la_compra.Controllers
 
 
 
-        [HttpGet]
-        public IActionResult DebugCistell()
-        {
-            // Recupera el JSON del cistell desde la sesión
-            var cistellJson = HttpContext.Session.GetString("Cistell");
 
-            if (string.IsNullOrEmpty(cistellJson))
-            {
-                Console.WriteLine("No hay cistell en la sesión.");
-                return Content("No hay cistell en la sesión.");
-            }
-            else
-            {
-                Console.WriteLine("Contenido del cistell en sesión:");
-                Console.WriteLine(cistellJson);
-
-                // También se puede deserializar para iterar sobre los elementos si se desea
-                var cistell = JsonSerializer.Deserialize<Cistell>(cistellJson);
-                foreach (var elemento in cistell.Elements)
-                {
-                    Console.WriteLine($"Código Producto: {elemento.CodiProducte}, Cantidad: {elemento.Quantitat}");
-                }
-
-                return Content("El contenido del cistell se ha listado en la terminal.");
-            }
-        }
 
 
 
