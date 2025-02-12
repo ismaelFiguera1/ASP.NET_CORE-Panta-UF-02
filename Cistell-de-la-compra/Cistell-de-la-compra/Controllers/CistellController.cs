@@ -25,7 +25,7 @@ namespace Cistell_de_la_compra.Controllers
 
             ViewData["Cistell"] = cistell; // Aqui envio a la view el model cistell
 
-            return View(productes); // i aqui la llista de productes
+            return View(cistell); // i aqui la llista de productes
         }
 
         [HttpPost]
@@ -84,29 +84,31 @@ namespace Cistell_de_la_compra.Controllers
 
 
         [HttpPost]
-        public IActionResult ActualitzarCistell2(Cistell cistell)
+        public IActionResult ActualitzarCistell2(string[] CodiFormulari, int[] QuantitatFormulari)
         {
-            // Aqui serialitzo la cesta a JSON i ho guardo en la sessio
+            // es fica com array perque al form els inputs tenen el mateix name
+
+            
+
+            Cistell cistell;
+
+            cistell = new Cistell();
+
+            for (int i = 0; i < CodiFormulari.Length; i++)
+            {
+                string codi = CodiFormulari[i];
+                int quantitat = QuantitatFormulari[i];
+
+                cistell.Elements.Add(new ElementCistell { CodiProducte = codi, Quantitat = quantitat });
+            }
+
             HttpContext.Session.SetString("Cistell", JsonSerializer.Serialize(cistell));
 
-            var productes = Productes.ObtenirProductes();
-            var cistellJson = HttpContext.Session.GetString("Cistell");
-
-            Cistell cistell1;
-
-            if (!string.IsNullOrEmpty(cistellJson))
-            {
-                cistell1 = JsonSerializer.Deserialize<Cistell>(cistellJson);
-            }
-            else
-            {
-                cistell1 = new Cistell();
-            }
-
-            ViewData["Cistell"] = cistell1;
 
 
-            return View("Factura", productes);
+            return RedirectToAction("Index", "Cistell");
+
+
         }
 
 
