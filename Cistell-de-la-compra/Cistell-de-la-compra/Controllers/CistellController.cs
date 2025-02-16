@@ -30,57 +30,34 @@ namespace Cistell_de_la_compra.Controllers
         }
 
         [HttpPost]
-        public IActionResult ActualitzarCistell(string CodiProducteFormulari, int QuantitatFormulari)
+        public IActionResult AgafarProductes(string CodiProducteFormulari, int QuantitatFormulari)
         {
-            // Aqui recupero de la sessio el cistel, en certs casos pot ser null
-            var cistellSessio = HttpContext.Session.GetString("Cistell");
+            var sessio = HttpContext.Session;
 
             Cistell cistell;
 
+            // Agafo la sessio i el cistell
 
-            // Si la llista d'elements del cistell de la sessio NO esta buit agafo la llista de la sessio i ho fico a la variable
-            if(!string.IsNullOrEmpty(cistellSessio))
+            cistell=Cistell.ObtenirCistell(sessio);
+
+            if(cistell==null)
             {
-                cistell = JsonSerializer.Deserialize<Cistell>(cistellSessio);
-            }
-            else                                         // en cas contrari creo una llista d'elements buida
-            {
-                cistell = new Cistell();
+                cistell = Cistell.CrearCistell();
             }
 
-            // Aixi controlo que a la sessio hi hagi un cistell i si no es va sobreescribint
+            // Ara que tinc el cistell tinc que afegir els productes
 
+            cistell.AfegirElement(CodiProducteFormulari, QuantitatFormulari);
 
-            /* Aqui mirem si l'element del formulari existeix ja al cistell, ho fem comparant un a un els codis de la llista amb el del formulari, si existeix l'element l'agafa,
-            si no queda a null */
-            ElementCistell element = null;
-            foreach (var item in cistell.Elements)
-            {
-                if (item.CodiProducte == CodiProducteFormulari)
-                {
-                    element = item;
-                    break;
-                }
-            }
+            string cistellJSON = JsonSerializer.Serialize(cistell);
 
-
-            // Si l'element existeix a la llista, SEMPRE la quantitat sera 1, en canvi si no hi es ficara l'element amb els valors del formulari a la llista
-
-            if (element != null)
-            {
-                element.Quantitat = 1;
-            }
-            else
-            {
-                cistell.Elements.Add(new ElementCistell { CodiProducte = CodiProducteFormulari, Quantitat = QuantitatFormulari });
-            }
-
-            // despres agafem el cistell amb la llista i ho pujem a la sessio
-
-            HttpContext.Session.SetString("Cistell", JsonSerializer.Serialize(cistell));
+            sessio.SetString("Cistell", cistellJSON);
 
             return RedirectToAction("Index", "Productes");
         }
+
+
+
 
 
 
@@ -91,39 +68,71 @@ namespace Cistell_de_la_compra.Controllers
 
 
 
-            CistellProductesViewModel cistellProductes = new CistellProductesViewModel();
+            var sessio = HttpContext.Session;
 
-            var productes = cistellProductes.ObtenirProductes();
-            var cistell = cistellProductes.ObtenirCistell();
+            Cistell cistell;
 
+            // Agafo la sessio i el cistell
 
+            cistell = Cistell.ObtenirCistell(sessio);
 
-            for (int i = 0; i < CodiFormulari.Length; i++)
+            if (cistell != null)
             {
-                string codi = CodiFormulari[i];
-                int quantitat = QuantitatFormulari[i];
 
-                cistell.Elements.Add(new ElementCistell { CodiProducte = codi, Quantitat = quantitat });
+
+
+                // Primer sobreescribeixo el cistell
+
+                    cistell.ModificarQuantitat(CodiFormulari, QuantitatFormulari);
+
+                // Ara elimino del cistell els que el quantitat sigui 0
+
+                foreach (var item in CodiFormulari)
+                {
+                    
+                    var element = cistell.BuscarElement(item);
+
+                    if (element!=null && element.Quantitat == 0) {
+                        cistell.EliminarElement(item);
+                    }
+                }
+
+                if (!cistell.Elements.Any())
+                {
+                    HttpContext.Session.Remove("Cistell");
+                    return RedirectToAction("Index", "Productes");
+                }
+                else
+                {
+                    var productes = Productes.ObtenirProductes();
+                    var factura = new FacturaViewModel();
+
+                    foreach (var elementCistell in cistell.Elements)
+                    {
+                        foreach (var elementProducte in productes)
+                        {
+                            if(elementCistell.CodiProducte == elementProducte.CodiProducte)
+                            {
+                                factura.AfegirElement(elementCistell, elementProducte);
+
+                            }
+                        }
+                    }
+
+                    HttpContext.Session.Remove("Cistell");
+                    factura.CalcularTotal();
+                    return View("Factura", factura);
+                }
+
+
+                
+
             }
 
-            HttpContext.Session.SetString("Cistell", JsonSerializer.Serialize(cistell));
 
-			
-
-			
-
-			return View("Factura", cistellProductes);
-
+            return RedirectToAction("Index", "Productes");
 
         }
-
-
-
-
-
-
-
-
 
 
     }

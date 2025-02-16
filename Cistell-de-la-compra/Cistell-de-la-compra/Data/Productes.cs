@@ -12,7 +12,9 @@ namespace Cistell_de_la_compra.Data
             new Producte { CodiProducte = "002", Nom = "Coca-cola", Preu = 1.20, Imatge="/imatges/cocacola.webp" },
             new Producte { CodiProducte = "003", Nom = "Lejia", Preu = 2.67, Imatge = "/imatges/Lejia.jpg" },
             new Producte { CodiProducte = "012", Nom = "Oreo", Preu = 2.67, Imatge = "/imatges/Lejia.jpg" },
-            new Producte { CodiProducte = "701", Nom = "Cacahuete", Preu = 2.67, Imatge = "/imatges/Lejia.jpg" }
+            new Producte { CodiProducte = "701", Nom = "Cacahuete", Preu = 2.67, Imatge = "/imatges/Lejia.jpg" },
+            new Producte { CodiProducte = "505", Nom = "Ordenador", Preu = 33.25, Imatge="/imatges/cocacola.webp" },
+            new Producte { CodiProducte = "101", Nom = "Caball", Preu = 1563.25, Imatge="/imatges/cocacola.webp" },
         };
 
         /* Aqui retorno la llista, es estatica perque el model productes es static */

@@ -1,8 +1,33 @@
-﻿@model List<Producte>
+﻿@model Cistell_de_la_compra.ViewModel.FacturaViewModel
 <section>
 
     <div>
         <h1>Factura</h1>
+
+        <table>
+            <tr>
+                <th>Codi producte</th>
+                <th>Nom</th>
+                <th>Quantitat</th>
+                <th>Preu unitat</th>
+                <th>Preu total unitat</th>
+            </tr>
+            @foreach (var item in Model.Elements)
+            {
+                <tr>
+                    <td>@item.CodiProducte</td>
+                    <td>@item.Nom</td>
+                    <td>@item.Quantitat</td>
+                    <td>@item.Preu</td>
+                    <td>@item.PreuTotalElement</td>
+                </tr>
+            }
+
+
+            <tr>
+                <td>@Model.preuTotal</td>
+            </tr>
+        </table>
 
 
     </div>

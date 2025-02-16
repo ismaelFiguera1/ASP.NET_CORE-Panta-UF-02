@@ -45,7 +45,7 @@
 
             @foreach (var producte in Model)
             {
-            <form asp-action="ActualitzarCistell" asp-controller="Cistell" method="post">
+            <form asp-action="AgafarProductes" asp-controller="Cistell" method="post">
                 <!-- Enviem sol 1 cuantitat dels productes seleccionats, a la vista cistell ja modificarem la cuantitat -->
                 <input type="hidden" name="CodiProducteFormulari" value="@producte.CodiProducte" />
                 <input type="hidden" name="QuantitatFormulari" value="1" />
