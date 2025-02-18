@@ -1,10 +1,12 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\imatges\cistell-compra.svg
 wwwroot\imatges\Cocacola.png
 wwwroot\imatges\cocacola.webp
 wwwroot\imatges\Lejia.jpg
 wwwroot\imatges\mercadona.png
 wwwroot\imatges\patata.jpg
+wwwroot\js\afegirProducte.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\imatges\\Lejia.jpg"
     },
     {
+      "Id": "C:\\Users\\alum-01\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\wwwroot\\imatges\\cistell-compra.svg",
+      "PackagePath": "staticwebassets\\imatges\\cistell-compra.svg"
+    },
+    {
       "Id": "C:\\Users\\alum-01\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\wwwroot\\imatges\\cocacola.webp",
       "PackagePath": "staticwebassets\\imatges\\cocacola.webp"
     },
@@ -51,6 +55,10 @@
     {
       "Id": "C:\\Users\\alum-01\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\wwwroot\\imatges\\patata.jpg",
       "PackagePath": "staticwebassets\\imatges\\patata.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alum-01\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\wwwroot\\js\\afegirProducte.js",
+      "PackagePath": "staticwebassets\\js\\afegirProducte.js"
     },
     {
       "Id": "C:\\Users\\alum-01\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\wwwroot\\js\\site.js",

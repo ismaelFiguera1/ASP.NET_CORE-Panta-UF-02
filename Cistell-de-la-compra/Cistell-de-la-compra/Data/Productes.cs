@@ -9,18 +9,51 @@ namespace Cistell_de_la_compra.Data
         public static List<Producte> LlistaProductes { get; } = new List<Producte>
         {
             new Producte { CodiProducte = "001", Nom = "Patata", Preu = 0.23, Imatge="/imatges/patata.jpg" },
-            new Producte { CodiProducte = "002", Nom = "Coca-cola", Preu = 1.20, Imatge="/imatges/cocacola.webp" },
-            new Producte { CodiProducte = "003", Nom = "Lejia", Preu = 2.67, Imatge = "/imatges/Lejia.jpg" },
-            new Producte { CodiProducte = "012", Nom = "Oreo", Preu = 2.67, Imatge = "/imatges/Lejia.jpg" },
-            new Producte { CodiProducte = "701", Nom = "Cacahuete", Preu = 2.67, Imatge = "/imatges/Lejia.jpg" },
-            new Producte { CodiProducte = "505", Nom = "Ordenador", Preu = 33.25, Imatge="/imatges/cocacola.webp" },
-            new Producte { CodiProducte = "101", Nom = "Caball", Preu = 1563.25, Imatge="/imatges/cocacola.webp" },
+
         };
 
         /* Aqui retorno la llista, es estatica perque el model productes es static */
         public static List<Producte> ObtenirProductes()
         {
             return LlistaProductes;
+        }
+
+
+        public static bool AfegirProducte(Producte nouProducte, out string missatge)
+        {
+            if (nouProducte == null)
+            {
+                missatge = "El producte no pot ser null";
+                return false; 
+            }
+
+            if(string.IsNullOrWhiteSpace(nouProducte.Nom))
+            {
+                missatge = "El nom del producte es obligatori";
+                return false;
+            }
+
+            if (string.IsNullOrWhiteSpace(nouProducte.CodiProducte))
+            {
+                missatge = "El codi del producte es obligatori";
+                return false;
+            }
+
+            if(nouProducte.Preu <=0)
+            {
+                missatge = "El preu te que ser mes gran que 0";
+                return false;
+            }
+
+            if(LlistaProductes.Any(producte => producte.CodiProducte == nouProducte.CodiProducte))
+            {
+                missatge = "El codi del producte no pot ser repetit";
+                return false;
+            }
+
+            LlistaProductes.Add(nouProducte);
+            missatge = "Producte afegit correctament";
+            return true;
         }
     }
 }

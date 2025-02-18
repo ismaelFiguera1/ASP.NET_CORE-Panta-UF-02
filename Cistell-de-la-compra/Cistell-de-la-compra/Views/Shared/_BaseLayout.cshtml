@@ -8,16 +8,36 @@
     <link rel="stylesheet" href="~/NewFolder/Home.css" />
     <link rel="stylesheet" href="~/NewFolder/productes.css" />
     <link rel="stylesheet" href="~/NewFolder/Cistella.css" />
+    <link rel="stylesheet" href="~/NewFolder/Factura.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
 </head>
 <body>
     <header>
         <nav>
-            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Home">Home</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Productes" asp-action="InserirProducte" id="ap">Afegir Productes</a>
             <a class="nav-link text-dark" asp-area="" asp-controller="Productes" asp-action="Index">Productes</a>
-            <a class="nav-link text-dark" asp-area="" asp-controller="Cistell" asp-action="Index">Cistella</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Cistell" asp-action="Index">
+                <img src="~/imatges/cistell-compra.svg" id="carretCompra" alt="Cistella" style="width:40px; height:40px;" />
+            </a>
+
+        
         </nav>
     </header>
     <main>@RenderBody()</main>
+
+    <!-- Modal de Bootstrap -->
+    <div class="modal fade" id="afegirModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Aquí se cargará el contenido vía AJAX -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <footer>
         <table class="footer">
             <tr>
@@ -32,5 +52,10 @@
             </tr>
         </table>
     </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/afegirProducte.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

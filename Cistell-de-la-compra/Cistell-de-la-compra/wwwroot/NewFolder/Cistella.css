@@ -42,3 +42,8 @@
         .factura{
             padding-top:10%;
         }
+
+
+.hidden {
+    display: none;
+}

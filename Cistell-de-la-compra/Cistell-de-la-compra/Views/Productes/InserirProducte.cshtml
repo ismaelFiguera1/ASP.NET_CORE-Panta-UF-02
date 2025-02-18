@@ -1,0 +1,56 @@
+﻿@{
+	Layout = null;
+}
+
+@model Cistell_de_la_compra.Models.Producte
+
+<section>
+
+	<h1>Inserir nou producte</h1>
+
+	<!-- Aqui manego els error per part del servidor / Controlador -->
+
+	@if(ViewBag.Error != null)
+	{
+		<div class="alert alert-danger">
+			@ViewBag.Error
+		</div>
+	}
+
+	<form asp-action="InserirProducte" method="post">
+
+		<div>
+			<label asp-for="CodiProducte"></label>
+			<input asp-for="CodiProducte" class="form-control" />
+			<span asp-validation-for="CodiProducte" class="text-danger"></span>
+		</div>
+
+		<div>
+			<label asp-for="Nom"></label>
+			<input asp-for="Nom" class="form-control" />
+			<span asp-validation-for="Nom" class="text-danger"></span>
+		</div>
+
+		<div>
+			<label asp-for="Preu"></label>
+			<input asp-for="Preu" class="form-control" type="number" step="0.01" min="0"/>
+			<span asp-validation-for="Preu" class="text-danger"></span>
+		</div>
+
+		<div>
+			<label asp-for="Imatge"></label>
+			<input asp-for="Imatge" class="form-control" />
+			<span asp-validation-for="Imatge" class="text-danger"></span>
+		</div>
+
+		<button type="submit" class="btn btn-primary">Afegir producte</button>
+
+	</form>
+</section>
+
+
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+}
+
+			<!-- Aqui manego els error per part del model / client -->
