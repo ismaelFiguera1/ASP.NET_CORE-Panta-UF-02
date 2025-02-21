@@ -1,4 +1,5 @@
 ﻿using Cistell_de_la_compra.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Cistell_de_la_compra.Data
 {
@@ -19,42 +20,52 @@ namespace Cistell_de_la_compra.Data
         }
 
 
-        public static bool AfegirProducte(Producte nouProducte, out string missatge)
-        {
+        public static async  Task<(bool, string)>  AfegirProducte(Producte nouProducte)
+		{
             if (nouProducte == null)
             {
-                missatge = "El producte no pot ser null";
-                return false; 
+                
+                return (false, "El producte no pot ser null"); 
             }
 
             if(string.IsNullOrWhiteSpace(nouProducte.Nom))
             {
-                missatge = "El nom del producte es obligatori";
-                return false;
+              
+                return (false, "El nom del producte es obligatori");
             }
 
             if (string.IsNullOrWhiteSpace(nouProducte.CodiProducte))
-            {
-                missatge = "El codi del producte es obligatori";
-                return false;
+            { 
+                return (false, "El codi del producte es obligatori");
             }
 
             if(nouProducte.Preu <=0)
             {
-                missatge = "El preu te que ser mes gran que 0";
-                return false;
+                
+                return (false, "El preu te que ser mes gran que 0");
             }
 
             if(LlistaProductes.Any(producte => producte.CodiProducte == nouProducte.CodiProducte))
             {
-                missatge = "El codi del producte no pot ser repetit";
-                return false;
+                
+                return (false, "El codi del producte no pot ser repetit");
             }
 
+            if (nouProducte.ImatgeFile != null)
+            {
+                var carpetaImatges = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "imatges");
+                var nomArxiu = Path.GetFileName(nouProducte.ImatgeFile.FileName);
+                var rutaCompleta = Path.Combine(carpetaImatges, nomArxiu);
+
+                using (var stream = new FileStream(rutaCompleta, FileMode.Create))
+                {
+                    await nouProducte.ImatgeFile.CopyToAsync(stream);
+                }
+                nouProducte.Imatge="/imatges/" + nomArxiu;
+            }
             LlistaProductes.Add(nouProducte);
-            missatge = "Producte afegit correctament";
-            return true;
+            
+            return (true, "Producte afegit correctament");
         }
     }
 }
-

@@ -17,7 +17,7 @@
 		</div>
 	}
 
-	<form asp-action="InserirProducte" method="post">
+	<form asp-action="InserirProducte"  method="post" enctype="multipart/form-data">
 
 		<div>
 			<label asp-for="CodiProducte"></label>
@@ -38,9 +38,9 @@
 		</div>
 
 		<div>
-			<label asp-for="Imatge"></label>
-			<input asp-for="Imatge" class="form-control" />
-			<span asp-validation-for="Imatge" class="text-danger"></span>
+			<label asp-for="ImatgeFile"></label>
+			<input asp-for="ImatgeFile" type="file" class="form-control" />
+			<span asp-validation-for="ImatgeFile" class="text-danger"></span>
 		</div>
 
 		<button type="submit" class="btn btn-primary">Afegir producte</button>

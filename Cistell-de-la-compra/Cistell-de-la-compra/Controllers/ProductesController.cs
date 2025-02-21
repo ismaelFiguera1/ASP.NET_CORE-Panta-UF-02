@@ -22,16 +22,18 @@ namespace Cistell_de_la_compra.Controllers
 
 
         [HttpPost]
-        public IActionResult InserirProducte(Producte nouProducte)
+        public async Task<IActionResult> InserirProducte(Producte nouProducte)
         {
             if(!ModelState.IsValid)
             {
                 return View(nouProducte);
             }
 
-            string missatge;
+            
 
-            bool resultat = Productes.AfegirProducte(nouProducte, out missatge);
+            var (resultat , missatge) = await Productes.AfegirProducte(nouProducte);
+
+            
 
             if (resultat)
             {

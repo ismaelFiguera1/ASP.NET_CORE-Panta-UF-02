@@ -25,23 +25,7 @@
 
 
 
-    .cistella .hidden, .factura .hidden{
-        display: none;
-    }
 
-
-    .factura > div {
-        width: 20%;
-        background-color: whitesmoke;
-        margin: auto;
-        height: 400px;
-        padding-left: 20px;
-        padding-top: 5%;
-    }
-    
-        .factura{
-            padding-top:10%;
-        }
 
 
 .hidden {
