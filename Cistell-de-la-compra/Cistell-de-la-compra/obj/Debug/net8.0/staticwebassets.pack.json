@@ -73,6 +73,10 @@
       "PackagePath": "staticwebassets\\js\\afegirProducte.js"
     },
     {
+      "Id": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\wwwroot\\js\\login.js",
+      "PackagePath": "staticwebassets\\js\\login.js"
+    },
+    {
       "Id": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

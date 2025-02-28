@@ -1,6 +1,7 @@
 ﻿using System.Text.Json;
 using Cistell_de_la_compra.Data;
 using Cistell_de_la_compra.Models;
+using Cistell_de_la_compra.Repository;
 using Cistell_de_la_compra.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,7 +11,8 @@ namespace Cistell_de_la_compra.Controllers
     {
         public IActionResult Index()
         {
-            var productes = Productes.ObtenirProductes();
+            ProductesRepository pr = new();
+            var productes = pr.ObtenirProductes();
             var cistellJson = HttpContext.Session.GetString("Cistell");
 
             Cistell cistell;
@@ -66,7 +68,7 @@ namespace Cistell_de_la_compra.Controllers
         {
             // es fica com array perque al form els inputs tenen el mateix name
 
-
+            ProductesRepository productsRepository = new();
 
             var sessio = HttpContext.Session;
 
@@ -104,7 +106,7 @@ namespace Cistell_de_la_compra.Controllers
                 }
                 else
                 {
-                    var productes = Productes.ObtenirProductes();
+                    var productes = productsRepository.ObtenirProductes();
                     var factura = new FacturaViewModel();
 
                     foreach (var elementCistell in cistell.Elements)

@@ -1,5 +1,6 @@
 ﻿using Cistell_de_la_compra.Data;
 using Cistell_de_la_compra.Models;
+using Cistell_de_la_compra.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Cistell_de_la_compra.Controllers
@@ -8,7 +9,9 @@ namespace Cistell_de_la_compra.Controllers
     {
         public IActionResult Index()
         {
-            var productes = Productes.ObtenirProductes();    /* Aqui fem una instancia del model per recuperar el llistat i ho passarem a la llista */
+
+            ProductesRepository productsRepository = new();
+            var productes = productsRepository.ObtenirProductes();    /* Aqui fem una instancia del model per recuperar el llistat i ho passarem a la llista */
 
 
 
@@ -29,9 +32,9 @@ namespace Cistell_de_la_compra.Controllers
                 return View(nouProducte);
             }
 
-            
+            ProductesRepository productesRepository = new();
 
-            var (resultat , missatge) = await Productes.AfegirProducte(nouProducte);
+            var (resultat , missatge) = await productesRepository.AfegirProducte(nouProducte);
 
             
 

@@ -21,6 +21,7 @@
             <a class="nav-link text-dark" asp-area="" asp-controller="Cistell" asp-action="Index">
                 <img src="~/imatges/cistell-compra.svg" id="carretCompra" alt="Cistella" style="width:40px; height:40px;" />
             </a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Usuaris" asp-action="Login">Login</a>
 
         
         </nav>
@@ -57,6 +58,7 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/js/afegirProducte.js"></script>
+    <script src="~/js/login.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
