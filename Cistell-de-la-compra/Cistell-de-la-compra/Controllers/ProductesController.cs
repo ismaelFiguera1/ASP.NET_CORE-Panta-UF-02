@@ -11,16 +11,17 @@ namespace Cistell_de_la_compra.Controllers
         {
 
             ProductesRepository productsRepository = new();
-            var productes = productsRepository.ObtenirProductes();    /* Aqui fem una instancia del model per recuperar el llistat i ho passarem a la llista */
+            var productes = productsRepository.ObtenirProductes();  
 
 
 
-            return View(productes);    /* A la vista li passem un model */
+            return View(productes);    /* A la vista li passem els productes */
         }
 
+        [HttpGet]
         public IActionResult InserirProducte()
         {
-            return View("InserirProducte");
+            return View();
         }
 
 

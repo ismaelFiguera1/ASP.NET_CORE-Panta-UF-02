@@ -7,7 +7,10 @@ namespace Cistell_de_la_compra.Repository
     {
         public Usuari? GetUsuari(string email)
         {
-            foreach (Usuari us in Usuaris._usuaris)
+            var usuariRepository = new UsuarisRepository();
+            var usuaris = usuariRepository.ObtenirTotsUsuaris();
+
+			foreach (Usuari us in usuaris)
             {
                 if (us.email == email)
                 {
@@ -35,5 +38,10 @@ namespace Cistell_de_la_compra.Repository
             return false;
         }
 
-    }   
+		public List<Usuari> ObtenirTotsUsuaris()
+		{
+			return Usuaris._usuaris;
+		}
+
+	}   
 }
