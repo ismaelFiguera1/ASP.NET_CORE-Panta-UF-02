@@ -5,6 +5,17 @@ namespace Cistell_de_la_compra.Repository
 {
     public class UsuarisRepository
     {
+        public Usuari? GetUsuari(string email)
+        {
+            foreach (Usuari us in Usuaris._usuaris)
+            {
+                if (us.email == email)
+                {
+                    return us;
+                }
+            }
+            return null;
+        }
 
         public bool Existeix(string email)
         {

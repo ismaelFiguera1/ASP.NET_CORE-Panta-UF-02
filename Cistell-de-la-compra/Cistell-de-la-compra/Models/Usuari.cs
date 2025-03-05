@@ -42,18 +42,17 @@ namespace Cistell_de_la_compra.Models
         {
             UsuarisRepository ur = new();
             string? email = context.Session.GetString("usuari");
-            return ur.getUsuari(email??string.Empty);
+            return ur.GetUsuari(email??string.Empty);
         }
 
 		public static Usuari GuardarUsuariSessio(HttpContext context, string email)
 		{
-
             if (email == null) throw new ArgumentNullException("Email no pot ser null");
             context.Session.SetString("usuari", email);
 
-			UsuarisRepository ur = new();
-			string? email = context.Session.GetString("usuari");
-			return ur.getUsuari(email ?? string.Empty);
+            UsuarisRepository ur = new();
+			string? emailSessio = context.Session.GetString("usuari");
+			return ur.GetUsuari(emailSessio ?? string.Empty);
 		}
 
 	}
