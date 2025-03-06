@@ -9,10 +9,15 @@ namespace Cistell_de_la_compra.Controllers
 {
     public class CistellController : Controller
     {
+
+
+
+
         public IActionResult Index()
         {
-            ProductesRepository pr = new();
-            var productes = pr.ObtenirProductes();
+//            ProductesRepository pr = new();
+//            var productes = pr.ObtenirProductes();
+//          No necessito els productes, sol necessito el cistell
             var cistellJson = HttpContext.Session.GetString("Cistell");
 
             Cistell cistell;
@@ -23,7 +28,7 @@ namespace Cistell_de_la_compra.Controllers
             }
             else
             {
-                cistell = new Cistell(); // tan si com no, necessito retornar algo
+                cistell = Cistell.CrearCistell(); // tan si com no, necessito retornar algo
             }
 
             ViewData["Cistell"] = cistell; // Aqui envio a la view el model cistell

@@ -20,6 +20,25 @@ namespace Cistell_de_la_compra.Models
 
         public IFormFile? ImatgeFile { get; set; }
 
+        public Producte(){}
+
+        public Producte(string codi, string nom, double preu, string? img=null, IFormFile? imgFile= null){
+            CodiProducte=codi;
+             Nom=nom; 
+             Preu=preu; 
+             Imatge=img; 
+             ImatgeFile=imgFile;
+        }
+
+        public Producte(string codi, string nom, double preu, string? img=null){
+            CodiProducte=codi;
+             Nom=nom; 
+             Preu=preu; 
+             Imatge=img; 
+        }
+
+
+
 
     }
 }

@@ -1,0 +1,71 @@
+        public IActionResult Index()
+        {
+            var productes = Productes;
+            if(productes != null){
+                return View(productes);
+            }else{
+                productes= new Productes();
+                return View(productes);
+            }
+        }
+
+
+        La classe Productes al ser una classe estatica, No cal comprobar si en null ja 
+        que les estatiques Es creen sol una vegada al iniciar l'aplicacio
+
+
+        public IActionResult Index()
+        {
+            return View(Productes);
+        }
+
+
+
+        Les classes estatiques NO es poden passar a una vista
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+                @foreach (var producte in Model)
+                {
+
+
+                    if (producte.Imatge == "/imatges/cocacola.webp"){
+                        <figure>
+                            <img src="@producte.Imatge" class="cocacola"/>
+                            <figcaption>@producte.Nom</figcaption>
+                        </figure>
+                    } else {
+                        <figure>
+                            <img src="@producte.Imatge" />
+                            <figcaption>@producte.Nom</figcaption>
+                        </figure>
+                    }
+                }
+
+
+                si el controlador passa algo a la vista, la vista ho fica a Model
+
+                i el :
+
+                @model List<Cistell-de-la-compraProducte.Models.Producte>
+
+                sol indica que li arriva a la vista, 
+                en el nostre cas el controlador li passa una llista que almacena models producte. 
+

@@ -10,8 +10,10 @@ namespace Cistell_de_la_compra.Data
         public static List<Producte> LlistaProductes { get; } = new List<Producte>
         {
             new Producte { CodiProducte = "001", Nom = "Patata", Preu = 0.23, Imatge="/imatges/patata.jpg" },
-
+            new Producte ("002", "Ismael", 65.32, "/imatges/cocacola.webp")
         };
+
+        /* Al crear nous productes, al que fa servir el constructor buit */
 
         /* Aqui retorno la llista, es estatica perque el model productes es static */
 

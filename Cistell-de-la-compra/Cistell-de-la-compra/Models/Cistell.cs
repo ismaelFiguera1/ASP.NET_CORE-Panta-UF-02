@@ -7,7 +7,7 @@ namespace Cistell_de_la_compra.Models
     public class Cistell
     {
 
-        public List<ElementCistell> Elements { get; set; } = new List<ElementCistell>();
+        public List<Producte> Elements { get; set; } = new List<Producte>();
 
         // No ho faig estatic perqu cada usuari te que tindrer la seva cesta, si ho faig tots els usuaris farien servir la mateixa cesta i hi haria error de logica
 
@@ -37,9 +37,9 @@ namespace Cistell_de_la_compra.Models
         }
 
 
-        public ElementCistell BuscarElement(string codiProducte)
+        public Producte BuscarElement(string codiProducte)
         {
-            foreach (ElementCistell element in Elements)
+            foreach (Producte element in Elements)
             {
                 if (element.CodiProducte == codiProducte)
                 {
@@ -49,13 +49,14 @@ namespace Cistell_de_la_compra.Models
             return null;
         }
 
+
         public void AfegirElement(string codi, int quantitat)
         {
             var element = BuscarElement(codi);
 
             if (element == null)
             {
-                Elements.Add(new ElementCistell { CodiProducte=codi, Quantitat=quantitat });
+                Elements.Add(element);
             }
             else
             {
