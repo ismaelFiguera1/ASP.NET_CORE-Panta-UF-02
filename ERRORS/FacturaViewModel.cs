@@ -1,4 +1,4 @@
-﻿using Cistell_de_la_compra.Models;
+﻿/*using Cistell_de_la_compra.Models;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace Cistell_de_la_compra.ViewModel
@@ -33,3 +33,4 @@ namespace Cistell_de_la_compra.ViewModel
         }
     }
 }
+*/

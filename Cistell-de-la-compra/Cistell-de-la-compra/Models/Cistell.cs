@@ -1,13 +1,15 @@
 ﻿using System.Net.Http.Json;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Cistell_de_la_compra.Repository;
+using Cistell_de_la_compra.ViewModel;
 
 namespace Cistell_de_la_compra.Models
 {
     public class Cistell
     {
-
-        public List<Producte> Elements { get; set; } = new List<Producte>();
+        public double PreuTotalCistell { get; set; }
+        public List<ProducteCistell> Elements { get; set; } = new List<ProducteCistell>();
 
         // No ho faig estatic perqu cada usuari te que tindrer la seva cesta, si ho faig tots els usuaris farien servir la mateixa cesta i hi haria error de logica
 
@@ -37,11 +39,11 @@ namespace Cistell_de_la_compra.Models
         }
 
 
-        public Producte BuscarElement(string codiProducte)
+        public ProducteCistell BuscarElement(string codiProducte)
         {
-            foreach (Producte element in Elements)
+            foreach (ProducteCistell element in Elements)
             {
-                if (element.CodiProducte == codiProducte)
+                if (element.product.CodiProducte == codiProducte)
                 {
                     return element;
                 }
@@ -56,7 +58,22 @@ namespace Cistell_de_la_compra.Models
 
             if (element == null)
             {
-                Elements.Add(element);
+                // Tenim que agafar el codi i buscarlo a la llista de productes,
+                // llavors crear un producte cistell i insertar el producte cistell a la llista
+                ProductesRepository Productes = new();
+                var llistaProductes = Productes.ObtenirProductes();
+                foreach (var item in llistaProductes)
+                {
+                    if(item.CodiProducte == codi)
+                    {
+                        ProducteCistell pc = new();
+                        pc.product = item;
+                        pc.Quantitat = quantitat;
+                        pc.preuTotalProducteCistell = (pc.product.Preu * pc.Quantitat);
+
+                        Elements.Add(pc);
+                    }
+                }
             }
             else
             {

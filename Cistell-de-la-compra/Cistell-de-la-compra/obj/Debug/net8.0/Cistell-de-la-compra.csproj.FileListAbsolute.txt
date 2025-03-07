@@ -98,40 +98,6 @@ C:\Users\usuari1\Downloads\ASP.NET_CORE-Panta-UF-02-main\Cistell-de-la-compra\Ci
 C:\Users\usuari1\Downloads\ASP.NET_CORE-Panta-UF-02-main\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.pdb
 C:\Users\usuari1\Downloads\ASP.NET_CORE-Panta-UF-02-main\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.genruntimeconfig.cache
 C:\Users\usuari1\Downloads\ASP.NET_CORE-Panta-UF-02-main\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\ref\Cistell-de-la-compra.dll
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\bin\Debug\net8.0\appsettings.json
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\bin\Debug\net8.0\Cistell-de-la-compra.staticwebassets.runtime.json
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\bin\Debug\net8.0\Cistell-de-la-compra.staticwebassets.endpoints.json
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\bin\Debug\net8.0\Cistell-de-la-compra.exe
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\bin\Debug\net8.0\Cistell-de-la-compra.deps.json
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\bin\Debug\net8.0\Cistell-de-la-compra.runtimeconfig.json
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\bin\Debug\net8.0\Cistell-de-la-compra.dll
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\bin\Debug\net8.0\Cistell-de-la-compra.pdb
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.AssemblyInfoInputs.cache
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.AssemblyInfo.cs
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.csproj.CoreCompileInputs.cache
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.RazorAssemblyInfo.cache
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.RazorAssemblyInfo.cs
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\scopedcss\bundle\Cistell-de-la-compra.styles.css
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\scopedcss\projectbundle\Cistell-de-la-compra.bundle.scp.css
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\staticwebassets\msbuild.Cistell-de-la-compra.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\staticwebassets\msbuild.Cistell-de-la-compra.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\staticwebassets\msbuild.build.Cistell-de-la-compra.props
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Cistell-de-la-compra.props
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Cistell-de-la-compra.props
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.dll
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\refint\Cistell-de-la-compra.dll
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.pdb
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.genruntimeconfig.cache
-C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\ref\Cistell-de-la-compra.dll
 C:\Users\alum-01\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\alum-01\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\bin\Debug\net8.0\appsettings.json
 C:\Users\alum-01\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\bin\Debug\net8.0\Cistell-de-la-compra.staticwebassets.runtime.json
@@ -165,3 +131,48 @@ C:\Users\alum-01\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debu
 C:\Users\alum-01\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.pdb
 C:\Users\alum-01\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.genruntimeconfig.cache
 C:\Users\alum-01\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\ref\Cistell-de-la-compra.dll
+C:\Users\usuari1\3D Objects\ASP.NET_CORE-Panta-UF-02\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuari1\3D Objects\ASP.NET_CORE-Panta-UF-02\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.AssemblyInfoInputs.cache
+C:\Users\usuari1\3D Objects\ASP.NET_CORE-Panta-UF-02\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.AssemblyInfo.cs
+C:\Users\usuari1\3D Objects\ASP.NET_CORE-Panta-UF-02\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.csproj.CoreCompileInputs.cache
+C:\Users\usuari1\3D Objects\ASP.NET_CORE-Panta-UF-02\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\usuari1\3D Objects\ASP.NET_CORE-Panta-UF-02\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.RazorAssemblyInfo.cache
+C:\Users\usuari1\3D Objects\ASP.NET_CORE-Panta-UF-02\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.RazorAssemblyInfo.cs
+C:\Users\usuari1\3D Objects\ASP.NET_CORE-Panta-UF-02\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.sourcelink.json
+C:\Users\usuari1\3D Objects\ASP.NET_CORE-Panta-UF-02\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.dll
+C:\Users\usuari1\3D Objects\ASP.NET_CORE-Panta-UF-02\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\refint\Cistell-de-la-compra.dll
+C:\Users\usuari1\3D Objects\ASP.NET_CORE-Panta-UF-02\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.pdb
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.AssemblyInfoInputs.cache
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.AssemblyInfo.cs
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.csproj.CoreCompileInputs.cache
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.RazorAssemblyInfo.cache
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.RazorAssemblyInfo.cs
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\bin\Debug\net8.0\appsettings.json
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\bin\Debug\net8.0\Cistell-de-la-compra.staticwebassets.runtime.json
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\bin\Debug\net8.0\Cistell-de-la-compra.staticwebassets.endpoints.json
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\bin\Debug\net8.0\Cistell-de-la-compra.exe
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\bin\Debug\net8.0\Cistell-de-la-compra.deps.json
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\bin\Debug\net8.0\Cistell-de-la-compra.runtimeconfig.json
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\bin\Debug\net8.0\Cistell-de-la-compra.dll
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\bin\Debug\net8.0\Cistell-de-la-compra.pdb
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\scopedcss\bundle\Cistell-de-la-compra.styles.css
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\scopedcss\projectbundle\Cistell-de-la-compra.bundle.scp.css
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\staticwebassets\msbuild.Cistell-de-la-compra.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\staticwebassets\msbuild.Cistell-de-la-compra.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\staticwebassets\msbuild.build.Cistell-de-la-compra.props
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Cistell-de-la-compra.props
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Cistell-de-la-compra.props
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.dll
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\refint\Cistell-de-la-compra.dll
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.pdb
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\Cistell-de-la-compra.genruntimeconfig.cache
+C:\Users\usuari1\source\repos\Cistell-de-la-compra\Cistell-de-la-compra\obj\Debug\net8.0\ref\Cistell-de-la-compra.dll

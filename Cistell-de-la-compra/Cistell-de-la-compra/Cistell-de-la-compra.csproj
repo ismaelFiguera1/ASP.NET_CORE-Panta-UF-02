@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Views\Cistell\" />
     <Folder Include="wwwroot\imatges\" />
   </ItemGroup>
 

@@ -10,6 +10,7 @@ wwwroot\imatges\Lejia.jpg
 wwwroot\imatges\mercadona.png
 wwwroot\imatges\patata.jpg
 wwwroot\js\afegirProducte.js
+wwwroot\js\errorProductes.js
 wwwroot\js\login.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css

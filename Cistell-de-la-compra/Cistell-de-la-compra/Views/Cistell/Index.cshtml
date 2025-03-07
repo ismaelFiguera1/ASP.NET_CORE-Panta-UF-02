@@ -8,7 +8,7 @@
 			<th>Codi de producte</th>
 			<th>Quantitat</th>
 		</tr>
-
+		
 		
 		@foreach (var element in Model.Elements)
 		{
@@ -16,11 +16,11 @@
 				{
 					<tr>
 						<td>
-							@element.CodiProducte
-								<input type="hidden" name="CodiFormulari" value="@element.CodiProducte" />
+							
+								<input type="hidden" name="CodiFormulari" value="" />
 						</td>
 						<td>
-								<input type="number" name="QuantitatFormulari" min="0" value="@element.Quantitat" />
+								<input type="number" name="QuantitatFormulari" min="0" value="" />
 						</td>
 					</tr>
 				}
@@ -28,8 +28,8 @@
 				{
 					<tr class="hidden">
 						<td>
-							@element.CodiProducte
-							<input type="hidden" name="CodiFormulari" value="@element.CodiProducte" />
+							
+							<input type="hidden" name="CodiFormulari" value="" />
 						</td>
 						<td>
 							<input type="number" name="QuantitatFormulari" min="0" value="@element.Quantitat" />
