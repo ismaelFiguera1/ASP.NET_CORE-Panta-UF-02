@@ -8,13 +8,13 @@
 
 			<div>
 				<label asp-for="email"></label>
-				<input asp-for="email" class="form-control" />
+				<input asp-for="email" class="form-control" name="email" />
 				<span asp-validation-for="email" class="text-danger"></span>
 			</div>
 
 			<div>
 				<label asp-for="password"></label>
-				<input asp-for="password" class="form-control" />
+				<input asp-for="password" class="form-control" name="password" />
 				<span asp-validation-for="password" class="text-danger"></span>
 			</div>
 
@@ -23,6 +23,15 @@
 			<button type="submit" class="btn btn-primary">Login</button>
 
 		</form>
+
+		<br /><br /><br /><br /><br />
+
+		@if (TempData["ErrorMessage"] != null)
+		{
+			<div class="alert alert-danger">
+				@TempData["ErrorMessage"]
+			</div>
+		}
     </div>
 </section>
 

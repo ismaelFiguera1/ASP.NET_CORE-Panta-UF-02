@@ -1,4 +1,5 @@
-﻿using Cistell_de_la_compra.Models;
+﻿using System.Text.Json;
+using Cistell_de_la_compra.Models;
 using Cistell_de_la_compra.Repository;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,27 +10,40 @@ namespace Cistell_de_la_compra.Controllers
         [HttpGet]
         public IActionResult Login()
         {
-            return View(new Usuari());
+            return View();
         }
 
         [HttpPost]
-        public IActionResult Login(Usuari usuari)
+        public IActionResult Login(string email, string password)
         {
-            UsuarisRepository ur = new();
-            if (!ur.Existeix(usuari.email)) {
-                ModelState.AddModelError("email", "Usuari inexistent");
-            }
-            else if(!ur.CheckUsuari(usuari.email, usuari.password))
-            {
-				ModelState.AddModelError("password", "Contrasenya incorrecta");
-			}
+            UsuarisRepository ur = new UsuarisRepository();
 
-            if(ModelState.IsValid)
+            var userJSON = HttpContext.Session.GetString("User");
+
+            Usuari user;
+
+            if(userJSON != null)
             {
-                Usuari u = ur.GetUsuari(usuari.email);
-                Usuari.GuardarUsuariSessio(HttpContext, usuari.email);
-                RedirectToAction("Index", "Home");
+                user = JsonSerializer.Deserialize<Usuari>(userJSON);
             }
+            else
+            {
+                user = ur.trobar(email, password);
+                if(user != null)
+                {
+                    userJSON = JsonSerializer.Serialize(user);
+                    HttpContext.Session.SetString("User", userJSON);
+                    return RedirectToAction("Index", "Productes");
+                }
+                else
+                {
+                    TempData["ErrorMessage"] = "El usuari o la contrasenya son incorrectes";
+                    return RedirectToAction("Login");
+                }
+            }
+
+            
+
             return View();
         }
     }

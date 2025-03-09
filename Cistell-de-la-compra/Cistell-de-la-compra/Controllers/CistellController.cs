@@ -3,6 +3,7 @@ using Cistell_de_la_compra.Data;
 using Cistell_de_la_compra.Models;
 using Cistell_de_la_compra.Repository;
 using Cistell_de_la_compra.ViewModel;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Cistell_de_la_compra.Controllers
@@ -65,80 +66,68 @@ namespace Cistell_de_la_compra.Controllers
 
 
 
-/*
+
         [HttpPost]
-        public IActionResult ActualitzarCistell2(string[] CodiFormulari, int[] QuantitatFormulari)
+        public IActionResult ActualitzarCistell2(string[] CodiFormulari, int[] QuantitatFormulari, string action)
         {
-            // es fica com array perque al form els inputs tenen el mateix name
-
-            ProductesRepository productsRepository = new();
-
-            var sessio = HttpContext.Session;
+            var cistellJson = HttpContext.Session.GetString("Cistell");
 
             Cistell cistell;
 
-            // Agafo la sessio i el cistell
-
-            cistell = Cistell.ObtenirCistell(sessio);
-
-            if (cistell != null)
+            if (!string.IsNullOrEmpty(cistellJson))
             {
+                cistell = JsonSerializer.Deserialize<Cistell>(cistellJson);
+            }
+            else
+            {
+                cistell = Cistell.CrearCistell(); // tan si com no, necessito retornar algo
+            }
 
-
-
-                // Primer sobreescribeixo el cistell
-
-                    cistell.ModificarQuantitat(CodiFormulari, QuantitatFormulari);
-
-                // Ara elimino del cistell els que el quantitat sigui 0
-
-                foreach (var item in CodiFormulari)
+            if(action == "comprar")
+            {
+                if (cistellJson != null)
                 {
-                    
-                    var element = cistell.BuscarElement(item);
+                    cistell.ModificarCistell(CodiFormulari, QuantitatFormulari);
 
-                    if (element!=null && element.Quantitat == 0) {
-                        cistell.EliminarElement(item);
-                    }
-                }
+                    Factura factura = new Factura();
 
-                if (!cistell.Elements.Any())
-                {
+                    factura.cistell = cistell;
+
                     HttpContext.Session.Remove("Cistell");
-                    return RedirectToAction("Index", "Productes");
+                    string facturaJSON = JsonSerializer.Serialize(factura);
+
+                    HttpContext.Session.SetString("Factura", facturaJSON);
+
+                    return RedirectToAction("Acceptat", "Comprar");
                 }
                 else
                 {
-                    var productes = productsRepository.ObtenirProductes();
-                    var factura = new FacturaViewModel();
-
-                    foreach (var elementCistell in cistell.Elements)
-                    {
-                        foreach (var elementProducte in productes)
-                        {
-                            if(elementCistell.CodiProducte == elementProducte.CodiProducte)
-                            {
-                                factura.AfegirElement(elementCistell, elementProducte);
-
-                            }
-                        }
-                    }
-
-                    HttpContext.Session.Remove("Cistell");
-                    factura.CalcularTotal();
-                    return View("Factura", factura);
+                    return RedirectToAction("Cancelar", "Comprar");
                 }
-
-
-                
-
+            }
+            else if(action == "actualitzar")
+            {
+                if (cistellJson != null)
+                {
+                    cistell.ModificarCistell(CodiFormulari, QuantitatFormulari);
+                    var cistellJSON = JsonSerializer.Serialize(cistell);
+                    HttpContext.Session.SetString("Cistell", cistellJSON);
+                    return RedirectToAction("Index", "Cistell");
+                }
+                else
+                {
+                    return RedirectToAction("Index", "Cistell");
+                }
+            }
+            else if (action == "cancel")
+            {
+                return RedirectToAction("Cancelar", "Comprar");
             }
 
-
-            return RedirectToAction("Index", "Productes");
+            return RedirectToAction("Cancelar", "Comprar");
 
         }
 
-        */
+        
     }
 }

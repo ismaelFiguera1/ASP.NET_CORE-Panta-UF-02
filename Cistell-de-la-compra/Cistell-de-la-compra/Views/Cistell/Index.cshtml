@@ -3,45 +3,38 @@
 <section class="cistell">
 	<h1>Cistell de la compra</h1>
 	<form asp-action="ActualitzarCistell2" method="post">
-	<table>
-		<tr>
-			<th>Codi de producte</th>
-			<th>Quantitat</th>
-		</tr>
+		<table>
+			<tr>
+				<th>Codi de producte</th>
+				<th>Nom</th>
+				<th>Quantitat</th>
+				<th>Preu unitat</th>
+				<th>Preu Total</th>
+			</tr>
 		
 		
-		@foreach (var element in Model.Elements)
-		{
-				if(element.Quantitat>0)
-				{
-					<tr>
-						<td>
-							
-								<input type="hidden" name="CodiFormulari" value="" />
-						</td>
-						<td>
-								<input type="number" name="QuantitatFormulari" min="0" value="" />
-						</td>
-					</tr>
-				}
-				else
-				{
-					<tr class="hidden">
-						<td>
-							
-							<input type="hidden" name="CodiFormulari" value="" />
-						</td>
-						<td>
-							<input type="number" name="QuantitatFormulari" min="0" value="@element.Quantitat" />
-						</td>
-					</tr>
-				}
+			@foreach (var element in Model.Elements)
+			{
 
-		}
+				<tr>
+					<td>@element.product.CodiProducte</td>
+					<td>@element.product.Nom</td>
+					<td>
+						<input type="number" name="QuantitatFormulari" min="0" value="@element.Quantitat" />
+					</td>
+						<td>@element.product.Preu</td>
+						<td>@element.preuTotalProducteCistell</td>
+				</tr>
+					<input type="hidden" name="CodiFormulari" min="0" value="@element.product.CodiProducte" />
+
+
+			}
 		
-	</table>
+		</table>
 
 
-	<button type="submit">Comprar</button>
+		<button name="action" value="comprar" type="submit">Comprar</button>
+		<button name="action" value="actualitzar" type="submit">Actualitzar</button>
+		<button name="action" value="cancel" type="submit">Cancelar</button>
 	</form>
 </section>

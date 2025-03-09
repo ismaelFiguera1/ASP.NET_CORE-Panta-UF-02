@@ -90,6 +90,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imatges\Animaltastic_Ambigous_Animals_Names_Red_Panda.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imatges\bison-removebg-preview.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Cistell-de-la-compra</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Cistell-de-la-compra</BasePath>
+      <RelativePath>imatges/bison-removebg-preview.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>m0xsdawvq0</Fingerprint>
+      <Integrity>2hQOMQuzppaZhS9c7iupT8s1t+UsaxX0/+DmyXUKVh0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imatges\bison-removebg-preview.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imatges\by-helping-wild-animal-1.png'))">
       <SourceType>Package</SourceType>
       <SourceId>Cistell-de-la-compra</SourceId>
@@ -161,6 +179,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imatges\cocacola.webp'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imatges\como-saber-perro-sufre-ansiedad-asi-puede-tratarse_104.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Cistell-de-la-compra</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Cistell-de-la-compra</BasePath>
+      <RelativePath>imatges/como-saber-perro-sufre-ansiedad-asi-puede-tratarse_104.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>dcxjyq7gbe</Fingerprint>
+      <Integrity>jakaiIecyiMAvW9EmO3qjvJyoBk5ZIlUhw6+JA1HVK0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imatges\como-saber-perro-sufre-ansiedad-asi-puede-tratarse_104.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imatges\Lejia.jpg'))">
       <SourceType>Package</SourceType>
@@ -1398,8 +1434,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>guyi1si0sm</Fingerprint>
-      <Integrity>6DGkZKsIYMNabhtUFebZUpLlVjkf+IP3IDHVuZTDl9U=</Integrity>
+      <Fingerprint>dcm3qc7uvi</Fingerprint>
+      <Integrity>3Y0YQeAWiKdCCQCUOiNLZnrm+FyEaRWn+0QwnTB1G1I=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NewFolder\productes.css'))</OriginalItemSpec>

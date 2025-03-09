@@ -78,6 +78,7 @@ namespace Cistell_de_la_compra.Models
             else
             {
                 element.Quantitat += quantitat;
+                element.preuTotalProducteCistell = element.product.Preu * element.Quantitat;
             }
         }
 
@@ -90,19 +91,27 @@ namespace Cistell_de_la_compra.Models
             }
         }
 
-        public void ModificarQuantitat(string[] codis, int[] quantitats)
+        public void ModificarCistell(string[] codis, int[] quantitats)
         {
-            for(int i = 0; i<codis.Length; i++) 
+            int posicio = 0;
+            double preu = 0;
+            foreach (var item in codis)
             {
-                string codi = codis[i];
-                var element = BuscarElement(codi);
-                if (element != null)
-                {
-                    element.Quantitat = quantitats[i];
-                }
                 
+                foreach (var item1 in Elements)
+                {
+                    if (item == item1.product.CodiProducte)
+                    {
+                        item1.Quantitat = quantitats[posicio];
+                        item1.preuTotalProducteCistell = item1.Quantitat * item1.product.Preu;
+                        preu += item1.preuTotalProducteCistell;
+                    }
+                }
+                posicio++;
             }
 
+
+            PreuTotalCistell = preu;
         }
 
     }

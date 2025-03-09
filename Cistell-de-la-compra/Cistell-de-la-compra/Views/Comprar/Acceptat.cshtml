@@ -1,0 +1,25 @@
+﻿@model Cistell_de_la_compra.Models.Factura
+<section class="factura">
+	<h1>Compra Exitosa</h1>
+
+	<div>
+		<table>
+			<tr>
+				<th>Nom</th>
+				<th>Quantitat</th>
+				<th>Preu unitat</th>
+				<th>Preu Total</th>
+			</tr>
+			@foreach(var item in Model.cistell.Elements){
+				<tr>
+					<td>@item.product.Nom</td>
+					<td>@item.Quantitat</td>
+					<td>@item.product.Preu</td>
+					<td>@item.preuTotalProducteCistell</td>
+				</tr>
+			}
+		</table>
+
+		<p>Preu Total: <span>@Model.cistell.PreuTotalCistell</span></p>
+	</div>
+</section>

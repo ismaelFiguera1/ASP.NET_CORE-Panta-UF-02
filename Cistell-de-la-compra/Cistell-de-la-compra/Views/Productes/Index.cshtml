@@ -14,22 +14,19 @@
                 @foreach (var producte in Model)
                 {
 
+                    <div>
+                        <form asp-controller="Cistell" asp-action="AgafarProductes" method="post">
+                            <figure>
+                                <img src="@producte.Imatge" alt="Alternate Text" />
+                                <figcaption>@producte.Nom</figcaption>
+                                <input type="hidden" name="CodiProducteFormulari" value="@producte.CodiProducte" />
+                                <input type="hidden" name="QuantitatFormulari" value="1" />
+                                <button type="submit">Afegir</button>
+                           </figure>
+                        </form>
+                    </div>
 
-                    if (producte.Imatge == "/imatges/cocacola.webp"){
-                        <figure>
-                            <img src="@producte.Imatge" class="cocacola"/>
-                            <figcaption>@producte.Nom</figcaption>
-                        </figure>
-                        <br />
-                        <button></button>
-                    } else {
-                        <figure>
-                            <img src="@producte.Imatge" />
-                            <figcaption>@producte.Nom</figcaption>
-                        </figure>
-                    }
                 }
-
 
 
 
@@ -37,26 +34,4 @@
 
         </div>
     </section>
-    <div>
-
-        <!-- Aqui hi haura el formulari -->
-
-        
-            <h2>Afegir productes a la cesta</h2>
-
-            @foreach (var producte in Model)
-            {
-            <form asp-action="AgafarProductes" asp-controller="Cistell" method="post">
-                <!-- Enviem sol 1 cuantitat dels productes seleccionats, a la vista cistell ja modificarem la cuantitat -->
-                <input type="hidden" name="CodiProducteFormulari" value="@producte.CodiProducte" />
-                <input type="hidden" name="QuantitatFormulari" value="1" />
-                <button type="submit">@producte.Nom</button>
-            </form>
-
-            }
-        
-            
-        
-
-    </div>
 </section>
