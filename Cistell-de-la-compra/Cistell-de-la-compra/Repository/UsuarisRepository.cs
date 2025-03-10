@@ -30,5 +30,32 @@ namespace Cistell_de_la_compra.Repository
 			return null;
 		}
 
-	}   
+        public bool comprovarCorreu(string email)
+        {
+            UsuarisRepository ur = new();
+
+            var llistaUsuaris = ur.ObtenirTotsUsuaris();
+
+            foreach (var item in llistaUsuaris)
+            {
+                if(item.email == email)
+                {
+                    return true;
+                }
+            }
+
+
+            return false;
+        }
+
+        public int controlIntents(int intents)
+        {
+            if(intents>=3)
+            {
+
+            }
+
+            return 0;
+        }
+    }   
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cistell-de-la-compra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eda9822be26ca4f3b39ea374e5d10fb7e4f551fa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cistell-de-la-compra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cistell-de-la-compra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

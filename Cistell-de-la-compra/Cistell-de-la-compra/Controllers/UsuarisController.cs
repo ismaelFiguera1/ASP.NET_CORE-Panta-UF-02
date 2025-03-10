@@ -22,14 +22,10 @@ namespace Cistell_de_la_compra.Controllers
 
             Usuari user;
 
-            if(userJSON != null)
-            {
-                user = JsonSerializer.Deserialize<Usuari>(userJSON);
-            }
-            else
+            if(userJSON == null)
             {
                 user = ur.trobar(email, password);
-                if(user != null)
+                if (user != null)
                 {
                     userJSON = JsonSerializer.Serialize(user);
                     HttpContext.Session.SetString("User", userJSON);
@@ -37,7 +33,22 @@ namespace Cistell_de_la_compra.Controllers
                 }
                 else
                 {
+                    bool verificat = ur.comprovarCorreu(email);
                     TempData["ErrorMessage"] = "El usuari o la contrasenya son incorrectes";
+                    var intentsjson = HttpContext.Session.GetString("Intents");
+                    int intents;
+                    if(intentsjson==null)
+                    {
+                        intents = 1;
+                    }
+                    else
+                    {
+                        intents = JsonSerializer.Deserialize<int>(intentsjson);
+                        intents++;
+                    }
+                    ur.controlIntents(intents);
+                    intentsjson= JsonSerializer.Serialize(intents);
+                    HttpContext.Session.SetString("Intents", intentsjson);
                     return RedirectToAction("Login");
                 }
             }
@@ -45,6 +56,14 @@ namespace Cistell_de_la_compra.Controllers
             
 
             return View();
+        }
+
+        
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("User");
+            TempData["ErrorMessage"] = "Has tancat la sessio";
+            return RedirectToAction("Login");
         }
     }
 }

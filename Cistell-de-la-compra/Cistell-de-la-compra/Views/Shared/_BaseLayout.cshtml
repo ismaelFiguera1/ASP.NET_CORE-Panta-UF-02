@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -21,7 +22,20 @@
             <a class="nav-link text-dark" asp-area="" asp-controller="Cistell" asp-action="Index">
                 <img src="~/imatges/cistell-compra.svg" id="carretCompra" alt="Cistella" style="width:40px; height:40px;" />
             </a>
-            <a class="nav-link text-dark" asp-area="" asp-controller="Usuaris" asp-action="Login">Login</a>
+
+            @{
+                var username = Context.Session.GetString("User");
+                if (username == null)
+                {
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuaris" asp-action="Login">Login</a>
+                }
+                else
+                {
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuaris" asp-action="Logout">Logout</a>
+                }
+            }
+
+            
 
         
         </nav>
