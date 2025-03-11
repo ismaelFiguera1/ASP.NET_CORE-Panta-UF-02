@@ -8,12 +8,10 @@ wwwroot\imatges\cistell-compra.svg
 wwwroot\imatges\Cocacola.png
 wwwroot\imatges\cocacola.webp
 wwwroot\imatges\como-saber-perro-sufre-ansiedad-asi-puede-tratarse_104.jpg
+wwwroot\imatges\image.png
 wwwroot\imatges\Lejia.jpg
 wwwroot\imatges\mercadona.png
 wwwroot\imatges\patata.jpg
-wwwroot\js\afegirProducte.js
-wwwroot\js\errorProductes.js
-wwwroot\js\login.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

@@ -18,33 +18,33 @@ namespace Cistell_de_la_compra.Repository
 
             var LlistaProductes = productsRepository.ObtenirProductes();
 
-            if (nouProducte == null)
-            {
-
-                return (false, "El producte no pot ser null");
-            }
+       //     nouProducte.Nom = "   ";
 
             if (string.IsNullOrWhiteSpace(nouProducte.Nom))
             {
 
-                return (false, "El nom del producte es obligatori");
+                return (false, "El nom del producte no pot ser null ni buit ni sol espais");
             }
 
             if (string.IsNullOrWhiteSpace(nouProducte.CodiProducte))
             {
-                return (false, "El codi del producte es obligatori");
+                return (false, "El codi del producte no pot ser null ni buit ni sol espais");
             }
 
-            if (nouProducte.Preu <= 0)
+            if (nouProducte.Preu >= 101)
             {
 
-                return (false, "El preu te que ser mes gran que 0");
+                return (false, "El preu no pot ser mes gran que 100");
             }
 
-            if (LlistaProductes.Any(producte => producte.CodiProducte == nouProducte.CodiProducte))
-            {
 
-                return (false, "El codi del producte no pot ser repetit");
+
+            foreach (var item in LlistaProductes)
+            {
+                if(item.CodiProducte == nouProducte.CodiProducte)
+                {
+                    return (false, "El codi del producte no pot ser repetit, te que ser individual");
+                }
             }
 
             if (nouProducte.ImatgeFile != null)
@@ -59,7 +59,12 @@ namespace Cistell_de_la_compra.Repository
                 }
                 nouProducte.Imatge = "/imatges/" + nomArxiu;
             }
-            LlistaProductes.Add(nouProducte);
+            else
+            {
+                return (false, "falta pujar una imatge");
+            }
+            nouProducte.ImatgeFile = null;
+                LlistaProductes.Add(nouProducte);
 
             return (true, "Producte afegit correctament");
         }

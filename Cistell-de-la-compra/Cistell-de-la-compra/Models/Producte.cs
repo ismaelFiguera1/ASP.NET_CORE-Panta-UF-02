@@ -18,6 +18,7 @@ namespace Cistell_de_la_compra.Models
         
         public string? Imatge { get; set; }
 
+        [Required(ErrorMessage = "Es obligatori pujar la imatge")]
         public IFormFile? ImatgeFile { get; set; }
 
         public Producte(){}

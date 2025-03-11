@@ -41,8 +41,8 @@ namespace Cistell_de_la_compra.Controllers
 
             if (resultat)
             {
-                TempData["Missatge"]=missatge; 
-                // Es guarda el missatge a TempData baix la clau "Missatge"
+                TempData["MissatgeExit"]=missatge;
+                // Es guarda el missatge a TempData baix la clau "MissatgeExit"
                 return RedirectToAction("Index");
             }
             else
