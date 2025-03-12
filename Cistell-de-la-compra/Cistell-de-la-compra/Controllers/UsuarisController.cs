@@ -24,7 +24,8 @@ namespace Cistell_de_la_compra.Controllers
 
             if(userJSON == null)
             {
-                user = ur.trobar(email, password);
+                string missatgeBloquejat=null;
+                (user, missatgeBloquejat) = ur.trobar(email, password);
                 if (user != null)
                 {
                     userJSON = JsonSerializer.Serialize(user);
@@ -34,21 +35,10 @@ namespace Cistell_de_la_compra.Controllers
                 else
                 {
                     bool verificat = ur.comprovarCorreu(email);
+                    bool bloquejat = ur.controlIntents(verificat, email);
                     TempData["ErrorMessage"] = "El usuari o la contrasenya son incorrectes";
-                    var intentsjson = HttpContext.Session.GetString("Intents");
-                    int intents;
-                    if(intentsjson==null)
-                    {
-                        intents = 1;
-                    }
-                    else
-                    {
-                        intents = JsonSerializer.Deserialize<int>(intentsjson);
-                        intents++;
-                    }
-                    ur.controlIntents(intents);
-                    intentsjson= JsonSerializer.Serialize(intents);
-                    HttpContext.Session.SetString("Intents", intentsjson);
+
+
                     return RedirectToAction("Login");
                 }
             }

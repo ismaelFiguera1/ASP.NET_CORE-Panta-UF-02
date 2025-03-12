@@ -22,6 +22,8 @@ namespace Cistell_de_la_compra.Models
 
         /// <summary>Data y hora de creació o darrera edició o bloqueig</summary>
         public DateTime lastupdate { get; set; }
+
+        
         
         public Usuari(string password, string email, bool isAdmin, bool locked, DateTime lastupdate)
         {

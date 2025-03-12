@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\usuari1\\Pictures\\ASP.NET_CORE-Panta-UF-02\\Cistell-de-la-compra\\Cistell-de-la-compra\\Cistell-de-la-compra.csproj": {}
+    "C:\\Users\\usuari1\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Cistell-de-la-compra.csproj": {}
   },
   "projects": {
-    "C:\\Users\\usuari1\\Pictures\\ASP.NET_CORE-Panta-UF-02\\Cistell-de-la-compra\\Cistell-de-la-compra\\Cistell-de-la-compra.csproj": {
+    "C:\\Users\\usuari1\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Cistell-de-la-compra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usuari1\\Pictures\\ASP.NET_CORE-Panta-UF-02\\Cistell-de-la-compra\\Cistell-de-la-compra\\Cistell-de-la-compra.csproj",
+        "projectUniqueName": "C:\\Users\\usuari1\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Cistell-de-la-compra.csproj",
         "projectName": "Cistell-de-la-compra",
-        "projectPath": "C:\\Users\\usuari1\\Pictures\\ASP.NET_CORE-Panta-UF-02\\Cistell-de-la-compra\\Cistell-de-la-compra\\Cistell-de-la-compra.csproj",
+        "projectPath": "C:\\Users\\usuari1\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Cistell-de-la-compra.csproj",
         "packagesPath": "C:\\Users\\usuari1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usuari1\\Pictures\\ASP.NET_CORE-Panta-UF-02\\Cistell-de-la-compra\\Cistell-de-la-compra\\obj\\",
+        "outputPath": "C:\\Users\\usuari1\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

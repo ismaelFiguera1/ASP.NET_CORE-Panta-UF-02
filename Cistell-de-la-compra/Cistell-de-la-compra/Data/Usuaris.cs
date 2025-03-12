@@ -19,6 +19,12 @@ namespace Cistell_de_la_compra.Data
             _usuaris.Add(new Usuari("45678", "super@gmail.com", true, false, new DateTime(2024, 1, 1, 0, 0, 0)));
         }
 
-
+        public static Dictionary<string, int> numeroIntents { get; set; } = new Dictionary<string, int>
+        {
+            {"joan23@gmail.com", 0 },
+            {"maria@gmail.com", 0 },
+            {"carme17@gmail.com", 0 },
+            {"super@gmail.com", 0 }
+        };
     }
 }

@@ -5,12 +5,19 @@ namespace Cistell_de_la_compra.Repository
 {
     public class UsuarisRepository
     {
-		
 
-		public List<Usuari> ObtenirTotsUsuaris()
+
+        
+
+        public List<Usuari> ObtenirTotsUsuaris()
 		{
 			return Usuaris._usuaris;
 		}
+
+        public Dictionary<string, int> obtenirNumeroIntents()
+        {
+            return Usuaris.numeroIntents;
+        }
 
 		public Usuari trobar(string email, string password)
 		{
@@ -20,7 +27,15 @@ namespace Cistell_de_la_compra.Repository
             {
                 if (item.email == email)
                 {
-                    if(item.password == password)
+                    Dictionary<string, int> llistaIntents = ur.obtenirNumeroIntents();
+                    foreach (var item1 in llistaIntents)
+                    {
+                        if (item1.Value >= 3)
+                        {
+                            return (null, "ERROR    USUARI    BLOQUEJAT");
+                        }
+                    }
+                    if (item.password == password)
 					{
 						return item;
 					}
@@ -48,14 +63,26 @@ namespace Cistell_de_la_compra.Repository
             return false;
         }
 
-        public int controlIntents(int intents)
+        public bool controlIntents(bool correuCorrecte, string correu)
         {
-            if(intents>=3)
+            if (correuCorrecte)
             {
-
+                UsuarisRepository ur = new UsuarisRepository();
+                Dictionary<string, int> diccionari = ur.obtenirNumeroIntents();
+                foreach (var item in diccionari)
+                {
+                    if (item.Key == correu)
+                    {
+                        diccionari[item.Key]++;
+                    }
+                }
+                return true;
             }
-
-            return 0;
+            else
+            {
+                return false;
+            }
+                
         }
     }   
 }
