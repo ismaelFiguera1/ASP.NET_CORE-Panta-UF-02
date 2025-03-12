@@ -1,30 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\usuari1\\source\\repos\\Cistell-de-la-compra\\",
+  "WorkspaceRootPath": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|c:\\users\\usuari1\\source\\repos\\cistell-de-la-compra\\cistell-de-la-compra\\controllers\\productescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|c:\\users\\usuari\\source\\repos\\cistell-de-la-compra\\cistell-de-la-compra\\models\\cistell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|solutionrelative:cistell-de-la-compra\\models\\cistell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|c:\\users\\usuari\\source\\repos\\cistell-de-la-compra\\cistell-de-la-compra\\controllers\\cistellcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|solutionrelative:cistell-de-la-compra\\controllers\\cistellcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|c:\\users\\usuari\\source\\repos\\cistell-de-la-compra\\cistell-de-la-compra\\controllers\\productescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|solutionrelative:cistell-de-la-compra\\controllers\\productescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|c:\\users\\usuari1\\source\\repos\\cistell-de-la-compra\\cistell-de-la-compra\\repository\\usuarisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|solutionrelative:cistell-de-la-compra\\repository\\usuarisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|c:\\users\\usuari\\source\\repos\\cistell-de-la-compra\\cistell-de-la-compra\\repository\\productesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|solutionrelative:cistell-de-la-compra\\repository\\productesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|c:\\users\\usuari1\\source\\repos\\cistell-de-la-compra\\cistell-de-la-compra\\controllers\\usuariscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|solutionrelative:cistell-de-la-compra\\controllers\\usuariscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|c:\\users\\usuari\\source\\repos\\cistell-de-la-compra\\cistell-de-la-compra\\models\\producte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|solutionrelative:cistell-de-la-compra\\models\\producte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|c:\\users\\usuari1\\source\\repos\\cistell-de-la-compra\\cistell-de-la-compra\\data\\productes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|c:\\users\\usuari\\source\\repos\\cistell-de-la-compra\\cistell-de-la-compra\\data\\productes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|solutionrelative:cistell-de-la-compra\\data\\productes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|c:\\users\\usuari1\\source\\repos\\cistell-de-la-compra\\cistell-de-la-compra\\models\\usuari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|solutionrelative:cistell-de-la-compra\\models\\usuari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|c:\\users\\usuari\\source\\repos\\cistell-de-la-compra\\cistell-de-la-compra\\data\\usuaris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|solutionrelative:cistell-de-la-compra\\data\\usuaris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|c:\\users\\usuari1\\source\\repos\\cistell-de-la-compra\\cistell-de-la-compra\\data\\usuaris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|solutionrelative:cistell-de-la-compra\\data\\usuaris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|c:\\users\\usuari\\source\\repos\\cistell-de-la-compra\\cistell-de-la-compra\\views\\productes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|solutionrelative:cistell-de-la-compra\\views\\productes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|c:\\users\\usuari\\source\\repos\\cistell-de-la-compra\\cistell-de-la-compra\\views\\productes\\inserirproducte.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|solutionrelative:cistell-de-la-compra\\views\\productes\\inserirproducte.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|c:\\users\\usuari\\source\\repos\\cistell-de-la-compra\\cistell-de-la-compra\\controllers\\usuariscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|solutionrelative:cistell-de-la-compra\\controllers\\usuariscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|c:\\users\\usuari\\source\\repos\\cistell-de-la-compra\\cistell-de-la-compra\\controllers\\comprarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DEB4117-D368-46C5-9E5B-65518000A758}|Cistell-de-la-compra\\Cistell-de-la-compra.csproj|solutionrelative:cistell-de-la-compra\\controllers\\comprarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,80 +66,145 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsuarisController.cs",
-              "DocumentMoniker": "C:\\Users\\usuari1\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Controllers\\UsuarisController.cs",
-              "RelativeDocumentMoniker": "Cistell-de-la-compra\\Controllers\\UsuarisController.cs",
-              "ToolTip": "C:\\Users\\usuari1\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Controllers\\UsuarisController.cs",
-              "RelativeToolTip": "Cistell-de-la-compra\\Controllers\\UsuarisController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA3wBsAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T09:56:53.649Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Usuaris.cs",
-              "DocumentMoniker": "C:\\Users\\usuari1\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Data\\Usuaris.cs",
-              "RelativeDocumentMoniker": "Cistell-de-la-compra\\Data\\Usuaris.cs",
-              "ToolTip": "C:\\Users\\usuari1\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Data\\Usuaris.cs",
-              "RelativeToolTip": "Cistell-de-la-compra\\Data\\Usuaris.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T09:28:55.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsuarisRepository.cs",
-              "DocumentMoniker": "C:\\Users\\usuari1\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Repository\\UsuarisRepository.cs",
-              "RelativeDocumentMoniker": "Cistell-de-la-compra\\Repository\\UsuarisRepository.cs",
-              "ToolTip": "C:\\Users\\usuari1\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Repository\\UsuarisRepository.cs",
-              "RelativeToolTip": "Cistell-de-la-compra\\Repository\\UsuarisRepository.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAqwCIAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T09:28:51.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductesController.cs",
-              "DocumentMoniker": "C:\\Users\\usuari1\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Controllers\\ProductesController.cs",
-              "RelativeDocumentMoniker": "Cistell-de-la-compra\\Controllers\\ProductesController.cs",
-              "ToolTip": "C:\\Users\\usuari1\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Controllers\\ProductesController.cs",
-              "RelativeToolTip": "Cistell-de-la-compra\\Controllers\\ProductesController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAMwCUAAABQAAAAAAAAAA==",
+              "Title": "Cistell.cs",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Models\\Cistell.cs",
+              "RelativeDocumentMoniker": "Cistell-de-la-compra\\Models\\Cistell.cs",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Models\\Cistell.cs",
+              "RelativeToolTip": "Cistell-de-la-compra\\Models\\Cistell.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAEwCkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T12:49:58.552Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Usuari.cs",
-              "DocumentMoniker": "C:\\Users\\usuari1\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Models\\Usuari.cs",
-              "RelativeDocumentMoniker": "Cistell-de-la-compra\\Models\\Usuari.cs",
-              "ToolTip": "C:\\Users\\usuari1\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Models\\Usuari.cs",
-              "RelativeToolTip": "Cistell-de-la-compra\\Models\\Usuari.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAA9wBkAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T09:29:01.754Z",
+              "WhenOpened": "2025-03-12T16:42:48.915Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Productes.cs",
-              "DocumentMoniker": "C:\\Users\\usuari1\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Data\\Productes.cs",
-              "RelativeDocumentMoniker": "Cistell-de-la-compra\\Data\\Productes.cs",
-              "ToolTip": "C:\\Users\\usuari1\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Data\\Productes.cs",
-              "RelativeToolTip": "Cistell-de-la-compra\\Data\\Productes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Title": "ProductesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Repository\\ProductesRepository.cs",
+              "RelativeDocumentMoniker": "Cistell-de-la-compra\\Repository\\ProductesRepository.cs",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Repository\\ProductesRepository.cs",
+              "RelativeToolTip": "Cistell-de-la-compra\\Repository\\ProductesRepository.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAowA4AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T09:38:40.141Z",
+              "WhenOpened": "2025-03-12T16:41:44.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Producte.cs",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Models\\Producte.cs",
+              "RelativeDocumentMoniker": "Cistell-de-la-compra\\Models\\Producte.cs",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Models\\Producte.cs",
+              "RelativeToolTip": "Cistell-de-la-compra\\Models\\Producte.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T16:41:38.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Productes.cs",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Data\\Productes.cs",
+              "RelativeDocumentMoniker": "Cistell-de-la-compra\\Data\\Productes.cs",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Data\\Productes.cs",
+              "RelativeToolTip": "Cistell-de-la-compra\\Data\\Productes.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T16:41:27.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InserirProducte.cshtml",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Views\\Productes\\InserirProducte.cshtml",
+              "RelativeDocumentMoniker": "Cistell-de-la-compra\\Views\\Productes\\InserirProducte.cshtml",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Views\\Productes\\InserirProducte.cshtml",
+              "RelativeToolTip": "Cistell-de-la-compra\\Views\\Productes\\InserirProducte.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-12T16:36:58.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Usuaris.cs",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Data\\Usuaris.cs",
+              "RelativeDocumentMoniker": "Cistell-de-la-compra\\Data\\Usuaris.cs",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Data\\Usuaris.cs",
+              "RelativeToolTip": "Cistell-de-la-compra\\Data\\Usuaris.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T16:33:31.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Views\\Productes\\Index.cshtml",
+              "RelativeDocumentMoniker": "Cistell-de-la-compra\\Views\\Productes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Views\\Productes\\Index.cshtml",
+              "RelativeToolTip": "Cistell-de-la-compra\\Views\\Productes\\Index.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-12T16:32:28.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsuarisController.cs",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Controllers\\UsuarisController.cs",
+              "RelativeDocumentMoniker": "Cistell-de-la-compra\\Controllers\\UsuarisController.cs",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Controllers\\UsuarisController.cs",
+              "RelativeToolTip": "Cistell-de-la-compra\\Controllers\\UsuarisController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAewCYAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T16:20:52.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductesController.cs",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Controllers\\ProductesController.cs",
+              "RelativeDocumentMoniker": "Cistell-de-la-compra\\Controllers\\ProductesController.cs",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Controllers\\ProductesController.cs",
+              "RelativeToolTip": "Cistell-de-la-compra\\Controllers\\ProductesController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowBUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T16:20:01.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CistellController.cs",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Controllers\\CistellController.cs",
+              "RelativeDocumentMoniker": "Cistell-de-la-compra\\Controllers\\CistellController.cs",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Controllers\\CistellController.cs",
+              "RelativeToolTip": "Cistell-de-la-compra\\Controllers\\CistellController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwC4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T16:26:23.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ComprarController.cs",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Controllers\\ComprarController.cs",
+              "RelativeDocumentMoniker": "Cistell-de-la-compra\\Controllers\\ComprarController.cs",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\Cistell-de-la-compra\\Cistell-de-la-compra\\Controllers\\ComprarController.cs",
+              "RelativeToolTip": "Cistell-de-la-compra\\Controllers\\ComprarController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T16:30:09.696Z",
               "EditorCaption": ""
             }
           ]

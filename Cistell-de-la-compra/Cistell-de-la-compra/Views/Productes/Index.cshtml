@@ -37,6 +37,13 @@
                     @TempData["MissatgeExit"]
                 </div>
             }
+
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger">
+                    @TempData["ErrorMessage"]
+                </div>
+            }
         </div>
     </section>
 </section>

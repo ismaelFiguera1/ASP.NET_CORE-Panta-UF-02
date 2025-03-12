@@ -2,6 +2,7 @@
 using Cistell_de_la_compra.Models;
 using Cistell_de_la_compra.Repository;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 
 namespace Cistell_de_la_compra.Controllers
 {
@@ -9,6 +10,16 @@ namespace Cistell_de_la_compra.Controllers
     {
         public IActionResult Index()
         {
+            var userJSON = HttpContext.Session.GetString("User");
+
+
+            Usuari user = JsonSerializer.Deserialize<Usuari>(userJSON);
+
+            if (user.isAdmin == true)
+            {
+                TempData["ErrorMessage"] = "El teu usuari te permissos de administracio";
+                return RedirectToAction("InserirProducte");
+            }
 
             ProductesRepository productsRepository = new();
             var productes = productsRepository.ObtenirProductes();  
@@ -21,6 +32,24 @@ namespace Cistell_de_la_compra.Controllers
         [HttpGet]
         public IActionResult InserirProducte()
         {
+            var userJSON = HttpContext.Session.GetString("User");
+
+            if(userJSON == null)
+            {
+                TempData["ErrorMessage"] = "Per afegir productes tens que iniciar sessio";
+                return RedirectToAction("Login", "Usuaris");
+            }
+
+            Usuari user = JsonSerializer.Deserialize<Usuari>(userJSON);
+
+            if(user.isAdmin == false)
+            {
+                TempData["ErrorMessage"] = "El teu usuari no te permissos de administracio";
+                return RedirectToAction("Index");
+            }
+
+
+
             return View();
         }
 

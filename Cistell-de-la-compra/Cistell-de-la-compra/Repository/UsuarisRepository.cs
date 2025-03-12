@@ -1,5 +1,6 @@
 ﻿using Cistell_de_la_compra.Data;
 using Cistell_de_la_compra.Models;
+using System.Collections.Generic;
 
 namespace Cistell_de_la_compra.Repository
 {
@@ -19,7 +20,7 @@ namespace Cistell_de_la_compra.Repository
             return Usuaris.numeroIntents;
         }
 
-		public Usuari trobar(string email, string password)
+		public (Usuari, string) trobar(string email, string password)
 		{
 			UsuarisRepository ur = new();
 			var llista = ur.ObtenirTotsUsuaris();
@@ -27,22 +28,24 @@ namespace Cistell_de_la_compra.Repository
             {
                 if (item.email == email)
                 {
-                    Dictionary<string, int> llistaIntents = ur.obtenirNumeroIntents();
-                    foreach (var item1 in llistaIntents)
-                    {
-                        if (item1.Value >= 3)
-                        {
-                            return (null, "ERROR    USUARI    BLOQUEJAT");
-                        }
-                    }
+
                     if (item.password == password)
 					{
-						return item;
+                        Dictionary<string, int> llistaIntents = ur.obtenirNumeroIntents();
+                        foreach (var item1 in llistaIntents)
+                        {
+                            if (item1.Value >= 3 && item1.Key == email)
+                            {
+                                item.locked = true;
+                                return (null, "ERROR    USUARI    BLOQUEJAT");
+                            }
+                        }
+                        return (item, null);
 					}
                 }
             }
             
-			return null;
+			return (null, null);
 		}
 
         public bool comprovarCorreu(string email)
@@ -63,7 +66,7 @@ namespace Cistell_de_la_compra.Repository
             return false;
         }
 
-        public bool controlIntents(bool correuCorrecte, string correu)
+        public void controlIntents(bool correuCorrecte, string correu)
         {
             if (correuCorrecte)
             {
@@ -76,13 +79,21 @@ namespace Cistell_de_la_compra.Repository
                         diccionari[item.Key]++;
                     }
                 }
-                return true;
-            }
-            else
-            {
-                return false;
             }
                 
+        }
+
+        public void esborrarIntents(Usuari user)
+        {
+            UsuarisRepository ur = new();
+            Dictionary<string, int> intents = ur.obtenirNumeroIntents();
+            foreach (var item in intents)
+            {
+                if (item.Key == user.email)
+                {
+                    intents[item.Key] = 0;
+                }
+            }
         }
     }   
 }

@@ -26,26 +26,35 @@ namespace Cistell_de_la_compra.Controllers
             {
                 string missatgeBloquejat=null;
                 (user, missatgeBloquejat) = ur.trobar(email, password);
-                if (user != null)
+                if (missatgeBloquejat != null)
                 {
-                    userJSON = JsonSerializer.Serialize(user);
-                    HttpContext.Session.SetString("User", userJSON);
-                    return RedirectToAction("Index", "Productes");
+                    TempData["ErrorMessage"] = missatgeBloquejat;
+                    return View();
                 }
                 else
                 {
-                    bool verificat = ur.comprovarCorreu(email);
-                    bool bloquejat = ur.controlIntents(verificat, email);
-                    TempData["ErrorMessage"] = "El usuari o la contrasenya son incorrectes";
+                    if (user != null)
+                    {
+                        ur.esborrarIntents(user);
+                        userJSON = JsonSerializer.Serialize(user);
+                        HttpContext.Session.SetString("User", userJSON);
+                        return RedirectToAction("Index", "Productes");
+                    }
+                    else
+                    {
+                        bool verificat = ur.comprovarCorreu(email);
+                        ur.controlIntents(verificat, email);
+                        TempData["ErrorMessage"] = "El usuari o la contrasenya son incorrectes";
 
 
-                    return RedirectToAction("Login");
+                        return RedirectToAction("Login");
+                    }
                 }
             }
 
-            
 
-            return View();
+
+                return View();
         }
 
         
