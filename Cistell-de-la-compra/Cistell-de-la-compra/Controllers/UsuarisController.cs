@@ -1,22 +1,33 @@
 ﻿using System.Text.Json;
 using Cistell_de_la_compra.Models;
-using Cistell_de_la_compra.Repository;
+
+using Cistell_de_la_compra.Repository.interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Cistell_de_la_compra.Controllers
 {
     public class UsuarisController : Controller
     {
-        [HttpGet]
+        private IUsuarisRepository _usuarisRepository;
+
+		public UsuarisController(IUsuarisRepository _usuarisRepository)
+		{
+
+			this._usuarisRepository = _usuarisRepository;
+		}
+
+		[HttpGet]
         public IActionResult Login()
         {
             return View();
         }
 
+
+
         [HttpPost]
         public IActionResult Login(string email, string password)
         {
-            UsuarisRepository ur = new UsuarisRepository();
+
 
             var userJSON = HttpContext.Session.GetString("User");
 
@@ -25,7 +36,7 @@ namespace Cistell_de_la_compra.Controllers
             if(userJSON == null)
             {
                 string missatgeBloquejat=null;
-                (user, missatgeBloquejat) = ur.trobar(email, password);
+                (user, missatgeBloquejat) = _usuarisRepository.trobar(email, password);
                 if (missatgeBloquejat != null)
                 {
                     TempData["ErrorMessage"] = missatgeBloquejat;
@@ -35,15 +46,15 @@ namespace Cistell_de_la_compra.Controllers
                 {
                     if (user != null)
                     {
-                        ur.esborrarIntents(user);
+						_usuarisRepository.esborrarIntents(user);
                         userJSON = JsonSerializer.Serialize(user);
                         HttpContext.Session.SetString("User", userJSON);
                         return RedirectToAction("Index", "Productes");
                     }
                     else
                     {
-                        bool verificat = ur.comprovarCorreu(email);
-                        ur.controlIntents(verificat, email);
+                        bool verificat = _usuarisRepository.comprovarCorreu(email);
+                        _usuarisRepository.controlIntents(verificat, email);
                         TempData["ErrorMessage"] = "El usuari o la contrasenya son incorrectes";
 
 

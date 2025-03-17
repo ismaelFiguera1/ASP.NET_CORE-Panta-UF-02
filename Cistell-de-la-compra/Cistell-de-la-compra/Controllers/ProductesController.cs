@@ -1,6 +1,6 @@
 ﻿using Cistell_de_la_compra.Data;
 using Cistell_de_la_compra.Models;
-using Cistell_de_la_compra.Repository;
+using Cistell_de_la_compra.Repository.interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 
@@ -8,12 +8,31 @@ namespace Cistell_de_la_compra.Controllers
 {
     public class ProductesController : Controller
     {
-        public IActionResult Index()
+        private IProductesRepository _productsRepository;
+
+        public ProductesController(IProductesRepository pr)
+        {
+            this._productsRepository = pr;
+        }
+
+
+
+		public IActionResult Index()
         {
             var userJSON = HttpContext.Session.GetString("User");
 
 
-            Usuari user = JsonSerializer.Deserialize<Usuari>(userJSON);
+            Usuari user;
+
+            if (userJSON == null)
+            {
+				TempData["ErrorMessage"] = "Per veurer els productes tens que iniciar la sessio";
+				return RedirectToAction("Login", "Usuaris");
+			}
+            else
+            {
+				user = JsonSerializer.Deserialize<Usuari>(userJSON);
+			}
 
             if (user.isAdmin == true)
             {
@@ -21,8 +40,8 @@ namespace Cistell_de_la_compra.Controllers
                 return RedirectToAction("InserirProducte");
             }
 
-            ProductesRepository productsRepository = new();
-            var productes = productsRepository.ObtenirProductes();  
+            
+            var productes = _productsRepository.ObtenirProductes();  
 
 
 
@@ -62,9 +81,9 @@ namespace Cistell_de_la_compra.Controllers
                 return View(nouProducte);
             }
 
-            ProductesRepository productesRepository = new();
+            
 
-            var (resultat , missatge) = await productesRepository.AfegirProducte(nouProducte);
+            var (resultat , missatge) = await _productsRepository.AfegirProducte(nouProducte);
 
             
 

@@ -1,3 +1,6 @@
+using Cistell_de_la_compra.Repository;
+using Cistell_de_la_compra.Repository.interfaces;
+
 namespace Cistell_de_la_compra
 {
     public class Program
@@ -18,7 +21,10 @@ namespace Cistell_de_la_compra
                 options.Cookie.IsEssential = true;
             });
 
-            var app = builder.Build();
+            builder.Services.AddTransient<IUsuarisRepository, UsuarisRepository>();
+            builder.Services.AddTransient<IProductesRepository, ProductesRepository>();
+
+			var app = builder.Build();
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
