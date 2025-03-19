@@ -1,0 +1,196 @@
+        public IActionResult Index()
+        {
+            var productes = Productes;
+            if(productes != null){
+                return View(productes);
+            }else{
+                productes= new Productes();
+                return View(productes);
+            }
+        }
+
+
+        La classe Productes al ser una classe estatica, No cal comprobar si en null ja 
+        que les estatiques Es creen sol una vegada al iniciar l'aplicacio
+
+
+        public IActionResult Index()
+        {
+            return View(Productes);
+        }
+
+
+
+        Les classes estatiques NO es poden passar a una vista
+
+
+
+
+
+
+
+
+
+
+¡Por supuesto! 🚀 En ASP.NET Core MVC puedes enviar mensajes de error desde un controlador a una vista usando diferentes métodos.
+
+📌 Opciones para enviar mensajes de error desde el controlador a la vista
+1️⃣ Usar ViewData ✅
+2️⃣ Usar ViewBag ✅
+3️⃣ Usar TempData ✅
+4️⃣ Usar ModelState para validaciones ✅
+
+Voy a explicarte cada una con ejemplos para que puedas decidir cuál usar en cada caso. 🔥💡
+
+🔹 1. Usar ViewData (Opción rápida pero no persistente)
+ViewData permite enviar datos desde el controlador a la vista, pero solo dura una solicitud HTTP.
+
+📌 Ejemplo en el Controlador
+csharp
+Copiar
+Editar
+public IActionResult Index()
+{
+    ViewData["ErrorMessage"] = "Ha ocurrido un error al cargar los datos.";
+    return View();
+}
+📌 En la Vista (Index.cshtml)
+csharp
+Copiar
+Editar
+@if (ViewData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @ViewData["ErrorMessage"]
+    </div>
+}
+✅ Se usa cuando solo necesitas enviar un mensaje temporal a la vista en la misma solicitud.
+
+🔹 2. Usar ViewBag (Similar a ViewData, pero más limpio)
+📌 ViewBag funciona igual que ViewData, pero es más fácil de usar porque no requiere casting.
+
+📌 En el Controlador
+csharp
+Copiar
+Editar
+public IActionResult Index()
+{
+    ViewBag.ErrorMessage = "No tienes permisos para acceder.";
+    return View();
+}
+📌 En la Vista
+csharp
+Copiar
+Editar
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-warning">
+        @ViewBag.ErrorMessage
+    </div>
+}
+✅ Útil para mensajes temporales, pero no persiste en redirecciones.
+
+🔹 3. Usar TempData (Para mensajes que sobreviven a redirecciones)
+📌 TempData es útil cuando necesitas mostrar un mensaje de error DESPUÉS de redirigir a otra acción.
+
+📌 En el Controlador
+csharp
+Copiar
+Editar
+public IActionResult Login()
+{
+    TempData["ErrorMessage"] = "Usuario o contraseña incorrectos.";
+    return RedirectToAction("Index");
+}
+📌 En la Vista (Index.cshtml)
+
+csharp
+Copiar
+Editar
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+✅ Se usa cuando el mensaje de error debe sobrevivir a una redirección.
+
+🔹 4. Usar ModelState para validaciones en formularios
+📌 Cuando trabajas con formularios (POST), puedes usar ModelState para enviar mensajes de error a la vista.
+
+📌 En el Controlador
+csharp
+Copiar
+Editar
+[HttpPost]
+public IActionResult Login(string usuario, string contraseña)
+{
+    if (usuario != "admin" || contraseña != "1234")
+    {
+        ModelState.AddModelError("ErrorLogin", "Usuario o contraseña incorrectos.");
+        return View();
+    }
+
+    return RedirectToAction("Dashboard");
+}
+📌 En la Vista (Login.cshtml)
+
+csharp
+Copiar
+Editar
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        @Html.ValidationSummary()
+    </div>
+}
+✅ Ideal para manejar errores en formularios y validaciones.
+
+🚀 ¿Cuál método elegir?
+Método	Persiste en Redirección?	Mejor uso
+ViewData	❌ No	Mensajes temporales en la misma vista
+ViewBag	❌ No	Similar a ViewData, pero más limpio
+TempData	✅ Sí	Mensajes después de una redirección
+ModelState	❌ No	Validaciones en formularios (POST)
+🔥 Conclusión
+✅ Si solo necesitas mostrar un mensaje en la misma solicitud → ViewBag o ViewData.
+✅ Si el mensaje debe sobrevivir a una redirección → TempData.
+✅ Si es un error en un formulario (POST) → ModelState.AddModelError().
+
+📌 ¿Cuál necesitas en tu caso? 😃🔥
+
+
+
+
+
+
+
+
+        
+                @foreach (var producte in Model)
+                {
+
+
+                    if (producte.Imatge == "/imatges/cocacola.webp"){
+                        <figure>
+                            <img src="@producte.Imatge" class="cocacola"/>
+                            <figcaption>@producte.Nom</figcaption>
+                        </figure>
+                    } else {
+                        <figure>
+                            <img src="@producte.Imatge" />
+                            <figcaption>@producte.Nom</figcaption>
+                        </figure>
+                    }
+                }
+
+
+                si el controlador passa algo a la vista, la vista ho fica a Model
+
+                i el :
+
+                @model List<Cistell-de-la-compraProducte.Models.Producte>
+
+                sol indica que li arriva a la vista, 
+                en el nostre cas el controlador li passa una llista que almacena models producte. 
+
