@@ -1,0 +1,43 @@
+﻿@model List<Tasca>
+
+<div class="container">
+    <h1>LLista de Tasques</h1>
+
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success mt-2">
+            @TempData["Message"]
+        </div>
+    }
+
+    <div>
+        <a asp-action="FormulariAlta" class="btn btn-primary">Alta</a>
+    </div>
+
+
+    <div class="mt-4">
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Acabada</th>
+                <th>Data</th>
+                <th>Descripcio</th>
+            </tr>
+            @foreach(var tasca in Model)
+            {
+                <form asp-action="Esborrar" method="post">
+                    <tr>
+                        <td>@tasca.Id</td>
+                        <td>@tasca.TascaFeta</td>
+                        <td>@tasca.CrearModificar</td>
+                        <td>@tasca.Description</td>
+                        <td>
+                        <button type="submit" class="btn btn-danger" name="idForm" value="@tasca.Id">Esborrar</button>
+                        </td>
+                    </tr>
+                </form>
+
+            }
+        </table>
+    </div>
+</div>

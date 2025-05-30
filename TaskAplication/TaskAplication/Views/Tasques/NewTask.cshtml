@@ -1,0 +1,32 @@
+﻿@model Tasca
+<div class="container">
+	<h1>Formulari Alta</h1>
+
+	@if (TempData["Message"] != null)
+	{
+		<div class="alert alert-success mt-2">
+			@TempData["Message"]
+		</div>
+	}
+
+	<div class="mt-5">
+		<form asp-action="FormulariAlta" method="post">
+			<div>
+				<label>Id</label>
+				<input type="number" value="@Model.Id" disabled  />
+			</div>
+
+			<div>
+				<label>Descripcio</label>
+				<input type="text" asp-for="Description" />
+			</div>
+
+			<div>
+				<label>Data Creacio</label>
+				<input type="text" value="@Model.CrearModificar" disabled />
+			</div>
+
+			<button type="submit" class="btn btn-primary">Alta</button>
+		</form>
+	</div>
+</div>
