@@ -48,7 +48,16 @@ namespace TaskAplication.Controllers
         [HttpPost]
         public IActionResult FormulariAlta(Tasca tascaFormulari)
         {
+
+            if (!ModelState.IsValid)
+            {
+                return View("NewTask", tascaFormulari);
+            }
+
+
             bool alta = _tasquesRepository.postTasques(tascaFormulari);
+
+
             if (alta)
             {
                 TempData["Message"] = "Tasca pujada";

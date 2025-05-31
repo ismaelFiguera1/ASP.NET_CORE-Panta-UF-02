@@ -1,30 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\alum-01\\source\\repos\\TaskAplication\\",
+  "WorkspaceRootPath": "C:\\Users\\usuari\\source\\repos\\TaskAplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C3FC5B2-ED73-41F3-8A2A-748CD7A9977E}|TaskAplication\\TaskAplication.csproj|c:\\users\\alum-01\\source\\repos\\taskaplication\\taskaplication\\controllers\\tasquescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C3FC5B2-ED73-41F3-8A2A-748CD7A9977E}|TaskAplication\\TaskAplication.csproj|solutionrelative:taskaplication\\controllers\\tasquescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C3FC5B2-ED73-41F3-8A2A-748CD7A9977E}|TaskAplication\\TaskAplication.csproj|c:\\users\\alum-01\\source\\repos\\taskaplication\\taskaplication\\views\\tasques\\newtask.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2C3FC5B2-ED73-41F3-8A2A-748CD7A9977E}|TaskAplication\\TaskAplication.csproj|c:\\users\\usuari\\source\\repos\\taskaplication\\taskaplication\\views\\tasques\\newtask.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2C3FC5B2-ED73-41F3-8A2A-748CD7A9977E}|TaskAplication\\TaskAplication.csproj|solutionrelative:taskaplication\\views\\tasques\\newtask.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C3FC5B2-ED73-41F3-8A2A-748CD7A9977E}|TaskAplication\\TaskAplication.csproj|c:\\users\\alum-01\\source\\repos\\taskaplication\\taskaplication\\views\\tasques\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2C3FC5B2-ED73-41F3-8A2A-748CD7A9977E}|TaskAplication\\TaskAplication.csproj|c:\\users\\usuari\\source\\repos\\taskaplication\\taskaplication\\controllers\\tasquescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C3FC5B2-ED73-41F3-8A2A-748CD7A9977E}|TaskAplication\\TaskAplication.csproj|solutionrelative:taskaplication\\controllers\\tasquescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C3FC5B2-ED73-41F3-8A2A-748CD7A9977E}|TaskAplication\\TaskAplication.csproj|c:\\users\\usuari\\source\\repos\\taskaplication\\taskaplication\\views\\tasques\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2C3FC5B2-ED73-41F3-8A2A-748CD7A9977E}|TaskAplication\\TaskAplication.csproj|solutionrelative:taskaplication\\views\\tasques\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C3FC5B2-ED73-41F3-8A2A-748CD7A9977E}|TaskAplication\\TaskAplication.csproj|c:\\users\\alum-01\\source\\repos\\taskaplication\\taskaplication\\repository\\tasquesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C3FC5B2-ED73-41F3-8A2A-748CD7A9977E}|TaskAplication\\TaskAplication.csproj|solutionrelative:taskaplication\\repository\\tasquesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C3FC5B2-ED73-41F3-8A2A-748CD7A9977E}|TaskAplication\\TaskAplication.csproj|c:\\users\\usuari\\source\\repos\\taskaplication\\taskaplication\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C3FC5B2-ED73-41F3-8A2A-748CD7A9977E}|TaskAplication\\TaskAplication.csproj|solutionrelative:taskaplication\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C3FC5B2-ED73-41F3-8A2A-748CD7A9977E}|TaskAplication\\TaskAplication.csproj|c:\\users\\alum-01\\source\\repos\\taskaplication\\taskaplication\\repository\\interfaces\\itasquesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C3FC5B2-ED73-41F3-8A2A-748CD7A9977E}|TaskAplication\\TaskAplication.csproj|solutionrelative:taskaplication\\repository\\interfaces\\itasquesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C3FC5B2-ED73-41F3-8A2A-748CD7A9977E}|TaskAplication\\TaskAplication.csproj|c:\\users\\alum-01\\source\\repos\\taskaplication\\taskaplication\\models\\tasca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C3FC5B2-ED73-41F3-8A2A-748CD7A9977E}|TaskAplication\\TaskAplication.csproj|c:\\users\\usuari\\source\\repos\\taskaplication\\taskaplication\\models\\tasca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C3FC5B2-ED73-41F3-8A2A-748CD7A9977E}|TaskAplication\\TaskAplication.csproj|solutionrelative:taskaplication\\models\\tasca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C3FC5B2-ED73-41F3-8A2A-748CD7A9977E}|TaskAplication\\TaskAplication.csproj|c:\\users\\usuari\\source\\repos\\taskaplication\\taskaplication\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C3FC5B2-ED73-41F3-8A2A-748CD7A9977E}|TaskAplication\\TaskAplication.csproj|solutionrelative:taskaplication\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +34,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\alum-01\\source\\repos\\TaskAplication\\TaskAplication\\Views\\Tasques\\Index.cshtml",
-              "RelativeDocumentMoniker": "TaskAplication\\Views\\Tasques\\Index.cshtml",
-              "ToolTip": "C:\\Users\\alum-01\\source\\repos\\TaskAplication\\TaskAplication\\Views\\Tasques\\Index.cshtml",
-              "RelativeToolTip": "TaskAplication\\Views\\Tasques\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "NewTask.cshtml",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\TaskAplication\\TaskAplication\\Views\\Tasques\\NewTask.cshtml",
+              "RelativeDocumentMoniker": "TaskAplication\\Views\\Tasques\\NewTask.cshtml",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\TaskAplication\\TaskAplication\\Views\\Tasques\\NewTask.cshtml",
+              "RelativeToolTip": "TaskAplication\\Views\\Tasques\\NewTask.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABoAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T12:50:57.527Z",
+              "WhenOpened": "2025-05-30T15:21:02.833Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ITasquesRepository.cs",
-              "DocumentMoniker": "C:\\Users\\alum-01\\source\\repos\\TaskAplication\\TaskAplication\\Repository\\Interfaces\\ITasquesRepository.cs",
-              "RelativeDocumentMoniker": "TaskAplication\\Repository\\Interfaces\\ITasquesRepository.cs",
-              "ToolTip": "C:\\Users\\alum-01\\source\\repos\\TaskAplication\\TaskAplication\\Repository\\Interfaces\\ITasquesRepository.cs",
-              "RelativeToolTip": "TaskAplication\\Repository\\Interfaces\\ITasquesRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Title": "Tasca.cs",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\TaskAplication\\TaskAplication\\Models\\Tasca.cs",
+              "RelativeDocumentMoniker": "TaskAplication\\Models\\Tasca.cs",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\TaskAplication\\TaskAplication\\Models\\Tasca.cs",
+              "RelativeToolTip": "TaskAplication\\Models\\Tasca.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T12:41:29.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TasquesRepository.cs",
-              "DocumentMoniker": "C:\\Users\\alum-01\\source\\repos\\TaskAplication\\TaskAplication\\Repository\\TasquesRepository.cs",
-              "RelativeDocumentMoniker": "TaskAplication\\Repository\\TasquesRepository.cs",
-              "ToolTip": "C:\\Users\\alum-01\\source\\repos\\TaskAplication\\TaskAplication\\Repository\\TasquesRepository.cs",
-              "RelativeToolTip": "TaskAplication\\Repository\\TasquesRepository.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T12:39:02.944Z",
+              "WhenOpened": "2025-05-30T15:15:37.304Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Tasca.cs",
-              "DocumentMoniker": "C:\\Users\\alum-01\\source\\repos\\TaskAplication\\TaskAplication\\Models\\Tasca.cs",
-              "RelativeDocumentMoniker": "TaskAplication\\Models\\Tasca.cs",
-              "ToolTip": "C:\\Users\\alum-01\\source\\repos\\TaskAplication\\TaskAplication\\Models\\Tasca.cs",
-              "RelativeToolTip": "TaskAplication\\Models\\Tasca.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\TaskAplication\\TaskAplication\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "TaskAplication\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\TaskAplication\\TaskAplication\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "TaskAplication\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T11:43:31.573Z",
+              "WhenOpened": "2025-05-30T15:14:07.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "NewTask.cshtml",
-              "DocumentMoniker": "C:\\Users\\alum-01\\source\\repos\\TaskAplication\\TaskAplication\\Views\\Tasques\\NewTask.cshtml",
-              "RelativeDocumentMoniker": "TaskAplication\\Views\\Tasques\\NewTask.cshtml",
-              "ToolTip": "C:\\Users\\alum-01\\source\\repos\\TaskAplication\\TaskAplication\\Views\\Tasques\\NewTask.cshtml",
-              "RelativeToolTip": "TaskAplication\\Views\\Tasques\\NewTask.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T11:22:31.586Z",
+              "Title": "TasquesController.cs",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\TaskAplication\\TaskAplication\\Controllers\\TasquesController.cs",
+              "RelativeDocumentMoniker": "TaskAplication\\Controllers\\TasquesController.cs",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\TaskAplication\\TaskAplication\\Controllers\\TasquesController.cs",
+              "RelativeToolTip": "TaskAplication\\Controllers\\TasquesController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAewDMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T15:12:17.989Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TasquesController.cs",
-              "DocumentMoniker": "C:\\Users\\alum-01\\source\\repos\\TaskAplication\\TaskAplication\\Controllers\\TasquesController.cs",
-              "RelativeDocumentMoniker": "TaskAplication\\Controllers\\TasquesController.cs",
-              "ToolTip": "C:\\Users\\alum-01\\source\\repos\\TaskAplication\\TaskAplication\\Controllers\\TasquesController.cs",
-              "RelativeToolTip": "TaskAplication\\Controllers\\TasquesController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwDsAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T11:17:58.911Z",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\TaskAplication\\TaskAplication\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "TaskAplication\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\TaskAplication\\TaskAplication\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "TaskAplication\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-30T15:10:56.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\usuari\\source\\repos\\TaskAplication\\TaskAplication\\Views\\Tasques\\Index.cshtml",
+              "RelativeDocumentMoniker": "TaskAplication\\Views\\Tasques\\Index.cshtml",
+              "ToolTip": "C:\\Users\\usuari\\source\\repos\\TaskAplication\\TaskAplication\\Views\\Tasques\\Index.cshtml",
+              "RelativeToolTip": "TaskAplication\\Views\\Tasques\\Index.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-30T15:10:11.187Z",
               "EditorCaption": ""
             }
           ]

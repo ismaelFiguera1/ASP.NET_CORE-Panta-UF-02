@@ -4,6 +4,7 @@ namespace TaskAplication.Models
 {
     public class Tasca
     {
+        [Required (ErrorMessage ="La descripcio es obligatoria")]
         public string Description { get; set; }
 
         public DateTime CrearModificar { get; set; }
